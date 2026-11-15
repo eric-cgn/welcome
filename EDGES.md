@@ -8,8 +8,8 @@ left. Settled items move to the bottom with what was decided.
 
 | # | Page | Edge |
 |---|---|---|
-| 1 | archives.html (two places) | The formats Mill handles, per today's source. Explorable archives are designed but blocked on the seekable-stream review and not built; the page describes Mill as it is. |
-| 2 | archives.html | "Looking inside an archive": an empty placeholder until archive browsing exists. Remove the section, or fill it from the shipped source. |
+| 1 | archives.html (two places) | The formats Mill handles. The 2.1 plan (retro repo, `docs/mill-plan.md`, 4905f9b on `globaltalk`) puts gzip, MacBinary, BinHex, zip, and tar in an Archive Formats Plug-In, with Browse. StuffIt and Compact Pro stay out. Redraft the page from the plan, then check it against the built `v2.1`. |
+| 2 | archives.html | "Looking inside an archive": fill from the plan (the Cancel / Browse / Save... dialog, Save... the default; "Browse after saving"; "Support Random Access" per protocol; member addresses after `#/`), then check every label against the built `v2.1` after its wording review. |
 | 3 | archives.html | One line names UnZip, suntar, and MacGzip: several period program names together; names and formats need checking. |
 | 4 | gopher.html | "named after the university's mascot" (the Golden Gopher). |
 | 5 | networks.html | Four period names in two paragraphs (Windows, IBM PC, Sun, AppleShare and the Chooser). |
@@ -24,6 +24,14 @@ left. Settled items move to the bottom with what was decided.
 
 ## Decisions pending
 
+- **Publishing:** the drafts describe Mill 2.1 (News, IMAP, LDAP, SMB, NFS, Image Formats, and
+  archive browsing), so they go live with the 2.1 release, not before. Until then, nothing new is
+  pushed (the repo and the site are public), or the drafts live on a branch kept local.
+- **Sequencing with Mill:** 2.1's stage 7 is a wording review of every user-facing string. The guide
+  quotes Mill's labels exactly, so its last pass comes after that review, checked against the built
+  `v2.1` on a lab Mac.
+- **Other 2.1 changes the guide may mention:** keep-alive connections and the idle-timeout setting
+  (General); HTTP/1.1. Probably invisible to the reader; decide when the build is in.
 - **Style guide additions** proposed by the drafting agents (not applied): `file:`/`mill:`/`plugin:`
   addresses shown, never linked; Mill's own names exactly ("choose Preferences from the Edit menu to
   open the Settings page"); "hold down the mouse button" for the context menu; placeholders in italic
@@ -38,8 +46,8 @@ left. Settled items move to the bottom with what was decided.
 - **Cartoons:** five more proposed (Names and Numbers, Archives, Finding People, Newsgroups,
   Etiquette), prompts given. Names and Numbers' cartoon extends the highway (an edge). Captions and
   in-picture lettering to be reviewed.
-- **StuffIt Expander:** Mill doesn't decode BinHex on download, so a reader needs Expander; no Mac copy
-  found to point to yet.
+- **StuffIt Expander:** in 2.1 Mill browses BinHex and MacBinary itself; StuffIt (`.sit`) and Compact
+  Pro (`.cpt`) still need Expander, and no Mac copy has been found to point to yet.
 - **Addresses page:** Command-L (Open Location) as step 1; a Tip that Mill adds `http://` itself.
 - **Default bookmarks for Mill 2.1:** eleven proposed, in `BOOKMARKS.md`; handed to the Mill session by Eric.
 - **Glossary:** written last, from the terms the pages define.
