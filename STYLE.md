@@ -290,9 +290,11 @@ Every protocol page follows the same order:
 - **Every link is real and tested in Mill** before it is published, and checked again on a schedule
   (see *Testing*). A link that fails comes out until it works again.
 - **Prefer places that last:** places run by communities, institutions, and dedicated individuals.
-- **Describe each place in our voice.** We can't control what a site says about itself, so we never
-  comment on its wording. Where there is a choice, prefer places whose first screen sits comfortably
-  in the period.
+- **Describe each place in our voice.** The guide is not an enclave: the places it links to are real
+  and may show their own time (dates, versions, words from after 1997). That is fine. Our own text
+  stays true then and true now and never comments on what a linked site says about itself. Choose
+  places for what they offer the reader; a first screen that sits comfortably in the period is a
+  bonus, not a requirement.
 - **Credit the people who run things.** Most servers worth visiting are kept by people who pay for
   them; say so, and teach the reader to be a good guest.
 - **Search starts with FrogFind:** "a search engine that also rewrites the pages it finds so a
