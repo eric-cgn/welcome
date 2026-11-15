@@ -127,6 +127,28 @@ never hyped. Think of a well-read friend at the next desk in a university comput
   it speak for itself.
 - **No nostalgia, no irony, and no winking** at the reader about their computer's age.
 
+### Pace: the way Apple's manuals teach
+
+The reader may not know what the Internet is. Take it slowly, and treat the reader with respect: assume
+intelligence, never knowledge. Apple's Macintosh manuals are the model.
+
+- **One new idea at a time,** each built on one already explained. Never use a term before it has
+  been explained. If an explanation needs another idea first, explain that idea first, or move the
+  explanation to a later page.
+- **Start from what the reader knows:** the Finder, documents, folders, menus, the mouse.
+- **One name for each thing.** Once something has a name, always use that name. Never switch to a
+  synonym: a protocol is never a "service", a server never a "site" or "host", an address never a
+  "location" or "URL" (except to explain that word once in the glossary).
+- **Remind the reader where a term came from** when it returns from an earlier page: "As you read in
+  Rules of the Road, a protocol is..."
+- **Explain why, not only what.**
+- **Steps the reader performs are numbered,** one action each, followed by what the reader will see.
+  The first page that asks the reader to type an address gives every step; later pages can say
+  "Type".
+- **The ordinary case comes first.** Exceptions and variations (other ports, addresses without a
+  server) come after the reader understands the ordinary case, and are labeled as such.
+- **When a page is getting long, split it** rather than hurry. Two calm pages beat one rushed one.
+
 ### The central idea
 
 The Internet is not a site. It is a set of published rules, called protocols, that any computer can
