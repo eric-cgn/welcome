@@ -329,15 +329,16 @@ read well in any other browser.
   - Nothing wider than about 460 pixels.
 - **Every address is shown in `<TT>`** as well as linked, so the reader can read it and type it.
   Reading an address is a skill the guide teaches.
-- **Callouts:** Try this, Tip, Note, and Important are set apart the same way every time: a thin
-  rule above and below, the 32 x 32 icon on the left, and the bold label starting the text.
+- **Callouts:** Try this, Tip, Note, and Important are set apart the same way every time: a box
+  with a solid border, the 32 x 32 icon and the bold label on one line at the top, and the text
+  below running the full width of the box, inset slightly by the cell padding.
 
   ```html
-  <HR SIZE=1 NOSHADE>
-  <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0><TR>
-  <TD VALIGN=TOP WIDTH=44><IMG SRC="images/tip.gif" WIDTH=32 HEIGHT=32 ALT=""></TD>
-  <TD VALIGN=TOP><B>Tip</B> ...</TD></TR></TABLE>
-  <HR SIZE=1 NOSHADE>
+  <P><TABLE WIDTH="100%" BORDER=1 CELLPADDING=6 CELLSPACING=0><TR><TD>
+  <TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD WIDTH=40><IMG SRC="images/tip.gif" WIDTH=32
+  HEIGHT=32 ALT=""></TD><TD VALIGN=MIDDLE><B>Tip</B></TD></TR></TABLE>
+  <P>...
+  </TD></TR></TABLE>
   ```
 
   The icons are `try.gif` (Try this), `tip.gif` (Tip), `note.gif` (Note), and `important.gif`
