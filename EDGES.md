@@ -8,9 +8,9 @@ left. Settled items move to the bottom with what was decided.
 
 | # | Page | Edge |
 |---|---|---|
-| 1 | archives.html (two places) | The formats Mill handles. The 2.1 plan (retro repo, `docs/mill-plan.md`, 4905f9b on `globaltalk`) puts gzip, MacBinary, BinHex, zip, and tar in an Archive Formats Plug-In, with Browse. StuffIt and Compact Pro stay out. Redraft the page from the plan, then check it against the built `v2.1`. |
-| 2 | archives.html | "Looking inside an archive": fill from the plan (the Cancel / Browse / Save... dialog, Save... the default; "Browse after saving"; "Support Random Access" per protocol; member addresses after `#/`), then check every label against the built `v2.1` after its wording review. |
-| 3 | archives.html | One line names UnZip, suntar, and MacGzip: several period program names together; names and formats need checking. |
+| 1 | archives.html | The formats Mill handles. The 2.1 plan (retro repo, `docs/mill-plan.md`, 4905f9b on `globaltalk`) puts gzip, MacBinary, BinHex, zip, and tar in an Archive Formats Plug-In, with Browse. StuffIt and Compact Pro stay out. Redrafted from the plan; the "Opening a wrapped file" and "When Browse is dimmed" sections and the Try this need checking against the built `v2.1` after its wording review. Open: what saving a file from inside a MacBinary or BinHex file gives (the page says "the file inside, unwrapped"). |
+| 2 | archives.html | (Merged into 1; the placeholder is gone.) Was: fill from the plan (the Cancel / Browse / Save... dialog, Save... the default; "Browse after saving"; "Support Random Access" per protocol; member addresses after `#/`), then check every label against the built `v2.1` after its wording review. |
+| 3 | archives.html | Minimal Install has no Archive Formats Plug-In (archives saved as before, no window); check against the 2.1 installer, and the Plug-In's final name (the plan leaves it open). |
 | 4 | gopher.html | "named after the university's mascot" (the Golden Gopher). |
 | 5 | networks.html | Four period names in two paragraphs (Windows, IBM PC, Sun, AppleShare and the Chooser). |
 | 6 | mail.html | "Some mail servers already require encryption" (a trend, like the proxy sentence). |
