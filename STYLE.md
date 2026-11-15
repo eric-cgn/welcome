@@ -1,0 +1,229 @@
+# Welcome to the Internet: style guide
+
+The rules for every word, page, and picture in the guide. Agree on changes here before the pages
+change.
+
+## What the guide is
+
+A short guide to the Internet from OneInAMillion Software, the makers of Mill. It explains what the
+Internet is, protocol by protocol, using the ones Mill speaks, and gives the reader real places to
+visit. It is a welcome for Mill users and a starting point for anyone exploring the Internet from a
+Compact Apple Macintosh.
+
+The readers:
+
+- Someone using Mill on a Macintosh Plus or later, who may know computers well but not the Internet.
+- Someone who has used the Internet only through a few large sites and has never typed an address
+  that didn't start with `http`. This reader may know nothing about protocols, servers, or addresses.
+  Write for this reader first.
+- Someone who knew the Internet well and is coming back. Never talk down to them.
+
+## The rule: true then, true now
+
+Every sentence must pass two tests:
+
+1. **Then:** it could appear in a guide printed for Christmas 1997.
+2. **Now:** every claim in it is true for the person reading it today.
+
+Never break the fourth wall. When something about today doesn't fit the period, find the wording
+that is true in both years. Never comment on the gap between them.
+
+### Techniques
+
+| Technique | Not this | This |
+|---|---|---|
+| State the trend, not the outcome | Most sites now require HTTPS. | Some sites already use encryption, and the trend is likely to continue. |
+| Present today's fixes as services the reader can get | Use a modern proxy to reach today's sites. | Working with encryption requires a powerful computer, so many Internet providers also include a service called a proxy. |
+| Name things by what they are, not their era | classic Macs, vintage hardware, mid-'90s browsers | Compact Apple Macintosh computers; a Macintosh with a 68000 processor |
+| Say who keeps a thing going, not whether it's fading | Gopher is mostly gone. | Many Gopher servers are run by people who prefer its plain menus to the Web's pages. |
+| Describe by kind, not by size | millions of sites; the largest archive | more sites than anyone could visit |
+| Put shared networks at school or work | your home network | If you connect through the network at your school or office... |
+| Name the specialist tool, then show what Mill can do | Mill can't send mail. | While specialized programs exist to manage electronic mail, Mill can... |
+| Explain pages Mill can't show by describing the page | Today's sites won't render. | Some sites are designed for more powerful computers with color screens. Mill shows what it can. |
+| Describe sign-ups and limits as a server's policy | Few free news servers are left. | Many news servers ask you to sign up for an account. |
+| Describe privacy as a choice | Nobody runs finger anymore. | Some computers answer finger requests. Many don't, to protect their users' privacy. |
+
+### Words that date the text
+
+These words imply that time has passed, so they never appear in the guide's own text:
+
+- Relative to the reader's time: *still, anymore, nowadays, today's, modern, these days, back then,
+  once, used to, remain(s), survive(s), no longer*
+- Labels for the reader's equipment: *retro, vintage, classic, old, legacy, obsolete, antique*
+- Words from after 1997: *app, cloud, social media, stream(ing), smartphone, tablet, Wi-Fi, Google,
+  blog, wiki, podcast, emoji*
+
+A word in these lists may be used only when it describes the topic, not the reader's time ("the oldest
+newsgroups"). Mark each such use for review (see *Marking judgment calls*).
+
+### Dates
+
+History may name years up to 1997 ("Gopher was written at the University of Minnesota in 1991").
+Never name a later year, and never use relative time ("a few years ago", "recently").
+
+## The company
+
+OneInAMillion Software is the only fiction. Everything else is real: every fact, every link, every
+description of how something works, and every piece of history.
+
+Say as little about the company as possible. Every detail we commit to closes off something a reader
+might imagine. The company makes Mill and wishes the reader well. Never give its founding date,
+address, size, staff, history, or other people. "We" in the company voice is fine because it commits
+to nothing.
+
+No invented people, quotes, testimonials, awards, or press.
+
+## The narrator
+
+- The **Welcome** page is a signed letter in the first person from Eric McIntyre, Founder,
+  OneInAMillion Software. It ends with `images/signature.gif`, then his typed name and title.
+- Every other page is in the company voice: "we" for OneInAMillion, "you" for the reader.
+
+The reference opening:
+
+> **Welcome to the Internet**
+>
+> On behalf of OneInAMillion Software, welcome to the Internet.
+>
+> If you are reading these words, you are already on it. Another computer sent this page to yours,
+> and your computer could read it because both follow the same published rules. Those rules are what
+> the Internet is made of, and this guide is about them.
+
+## Voice
+
+Model the voice on the best plain guides of the period, which explained patiently and generously and
+never hyped. Think of a well-read friend at the next desk in a university computer lab.
+
+- **Plain words, short sentences, active voice.** Address the reader as "you."
+- **Warm but precise.** Delight is welcome; hype is not. No exclamation marks, no superlatives, no
+  "amazing" or "awesome".
+- **Concrete first.** Start with an address to type and what the reader will see, then explain it.
+- **Define each term once**, in one sentence, where it first appears. The glossary has the rest.
+- **Never "simply", "just", "easy", or "obviously".** What is easy for us may not be easy for the
+  reader.
+- **One metaphor per idea**, and say where it stops working. A wrong mental model costs the reader
+  more than no metaphor at all.
+- **The reader's computer is never old.** It is a Macintosh with these capabilities: "If your
+  Macintosh has 1 MB of memory..."
+- **The reader is new to the Internet, not to computers.** Build out from the Finder, files, and
+  menus they already know.
+- **No sneering and no preaching** about other sites or companies. Show what is out there and let
+  it speak for itself.
+- **No nostalgia, no irony, and no winking** at the reader about their computer's age.
+
+### The central idea
+
+The Internet is not a site. It is a set of published rules, called protocols, that any computer can
+learn. This is why a Compact Macintosh can talk to any computer on the Internet, and why anyone can
+run a server as well as visit one. Every page should leave the reader understanding this a little
+better.
+
+### Mill, honestly
+
+Say plainly what Mill doesn't do, and don't sell short what it does. Name the specialist programs,
+then show what Mill can do. Never invent a capability. Check each claim against Mill's README and
+change log.
+
+### Humor
+
+An occasional clever remark or inside joke is welcome if it fits; don't resist one that does. Never
+make one the point of a passage. Mark anything near the line for review.
+
+### Safety
+
+Say once, calmly, on the Etiquette page, and in a sentence wherever a password comes up: these
+protocols send everything as plain text, so anything sent can be read along the way. Use a password
+you don't use anywhere else. Don't alarm the reader.
+
+## Spelling and capitalization
+
+- **the Internet**, **the Web**, **Web site**, **home page**, **e-mail**, **newsgroup**
+- **Macintosh** on first mention on a page, **Mac** after that. **Compact Macintosh** for the Plus,
+  SE, and Classic family.
+- Name protocols the way their rulebooks do: HTTP, FTP, Gopher, finger, whois, DICT, NNTP, IMAP,
+  LDAP, SMB, NFS. In an address, use the lowercase scheme: `gopher://`.
+- Name each protocol's RFC once, as its rulebook: "Gopher is described in RFC 1436, published in
+  1993." Cite only RFCs published by 1997.
+
+## Organization
+
+Group the protocols by the kind of place they lead to:
+
+| Page | Protocols |
+|---|---|
+| Welcome | (the letter) |
+| Addresses | how to read `scheme://host:port/path`; names and numbers (DNS) in one paragraph |
+| The Web | `http:`; encryption and proxies |
+| Gopher | `gopher:` |
+| Files | `ftp:` |
+| Finding people | `finger:`, `whois:`, `ldap:` |
+| Reference | `dict:`, `time:` |
+| Newsgroups | `news:`, `nntp:` |
+| Electronic mail | `imap:` |
+| School and office networks | `smb:`, `nfs:` |
+| Your Macintosh | `file:`, `mill:` |
+| Searching | search engines, starting with FrogFind |
+| Etiquette | being a good guest; plain text and passwords |
+| Where to Go | the directory of places to visit |
+| Glossary | every term defined in the guide |
+
+Every protocol page follows the same order:
+
+1. **Try this:** one address to type, on the first screen.
+2. **What it is:** a sentence of metaphor, then a sentence on how it works.
+3. **A little history:** two or three sentences, naming the rulebook.
+4. **What's there:** real places, described in our voice.
+5. **Good manners.**
+6. **What Mill needs:** for example, the plug-in that provides it.
+
+## Linked places
+
+- **Every link is real and tested in Mill** before it is published, and checked again on a schedule
+  (see *Testing*). A link that fails comes out until it works again.
+- **Prefer places that last:** places run by communities, institutions, and dedicated individuals.
+- **Describe each place in our voice.** We can't control what a site says about itself, so we never
+  comment on its wording. Where there is a choice, prefer places whose first screen sits comfortably
+  in the period.
+- **Credit the people who run things.** Most servers worth visiting are kept by people who pay for
+  them; say so, and teach the reader to be a good guest.
+- **Search starts with FrogFind:** "a search engine that also rewrites the pages it finds so a
+  smaller computer can read them."
+
+## Pages and format
+
+The guide is designed for Mill in a Macintosh Plus window (a 512 x 342 screen). Every page must also
+read well in any other browser.
+
+- **HTML 3.2**, validated against the HTML 3.2 DTD. No CSS, no JavaScript, no frames.
+- **ISO 8859-1 only.** HTML 3.2 has no curly quotes and no `&mdash;`: use straight quotes and `--`
+  or rewrite the sentence.
+- **The first screen of every page is useful on its own.** About 18 lines of 12-point text fit in
+  Mill's page area; measure against the real window before settling the numbers.
+- **One idea per screen.** Paragraphs of four lines or fewer on a Plus screen.
+- **Under about 16 KB of HTML per page.**
+- **Images:**
+  - 1-bit GIFs, drawn for the actual pixel size, never dithered photographs.
+  - Always give `WIDTH`, `HEIGHT`, and `ALT`.
+  - Nothing wider than about 460 pixels.
+- **Every address is shown in `<TT>`** as well as linked, so the reader can read it and type it.
+  Reading an address is a skill the guide teaches.
+- **Navigation:** the same Contents | Previous | Next line at the top and bottom of every page.
+- **File names:** short and lowercase (`gopher.html`), so they are easy to type.
+
+## Marking judgment calls
+
+Mark every humor call and every borderline true-then-true-now call in the source with
+`<!-- EDGE: why -->`. Eric reviews each one before publishing. Running `grep -rn EDGE docs/` lists
+them all.
+
+## Testing
+
+- **In Mill:** view every page in Mill at Macintosh Plus resolution before publishing.
+- **Links:** check every link in the guide by speaking its protocol. curl handles http, ftp, gopher,
+  dict, ldap, imap, and smb, and nc handles finger and time.
+- **Record:** keep the date of each check in the repository, not on the pages.
+
+## Hosting
+
+GitHub Pages serves `docs/` from `main`, over plain HTTP ("Enforce HTTPS" off), at the custom domain
+in `docs/CNAME`. `docs/.nojekyll` makes Pages serve the files as written.
