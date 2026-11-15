@@ -191,6 +191,8 @@ you don't use anywhere else. Don't alarm the reader.
 ## Spelling and capitalization
 
 - **the Internet**, **the Web**, **Web site**, **home page**, **e-mail**, **newsgroup**
+- **the World Wide Web** in titles and on first mention on its own page ("the World Wide Web (the
+  Web)"); **the Web** everywhere else
 - **Macintosh** on first mention on a page, **Mac** after that. **Compact Macintosh** for the Plus,
   SE, and Classic family.
 - Name protocols the way their rulebooks do: HTTP, FTP, Gopher, finger, whois, DICT, NNTP, IMAP,
@@ -207,7 +209,7 @@ Group the protocols by the kind of place they lead to:
 | Welcome | (the letter) |
 | Rules of the Road | the information superhighway; protocols; requests, servers, packets, and routers |
 | Addresses | how to read `scheme://host:port/path`; names and numbers (DNS) in one paragraph |
-| The Web | `http:`; encryption and proxies |
+| The World Wide Web | `http:`; encryption and proxies |
 | Gopher | `gopher:` |
 | Files | `ftp:` |
 | Finding people | `finger:`, `whois:`, `ldap:` |
