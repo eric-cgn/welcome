@@ -41,7 +41,7 @@ left. Settled items move to the bottom with what was decided.
 - **StuffIt Expander:** Mill doesn't decode BinHex on download, so a reader needs Expander; no Mac copy
   found to point to yet.
 - **Addresses page:** Command-L (Open Location) as step 1; a Tip that Mill adds `http://` itself.
-- **Default bookmarks for Mill 2.1:** eleven proposed (the guide, FrogFind, info.cern.ch,
+- **Default bookmarks for Mill 2.1:** eleven proposed, in `BOOKMARKS.md`; handed to the Mill session by Eric.
   textfiles.com, 68k.news, Gopher at quux.org and Floodgap, the Info-Mac mirror at ftp.jussieu.fr,
   dict.org, finger weather for Oslo, time.nist.gov). Hand to the Mill session, or Eric passes it on.
 - **Glossary:** written last, from the terms the pages define.
