@@ -142,11 +142,14 @@ protocol.
 
 - **The guide's one extended analogy is the information superhighway,** on the Rules of the Road
   page. We take it somewhere new: a highway is useful not only because it is fast, but also because
-  everyone follows the same rules of the road, which is what protocols are. Couriers carry the
-  reader's request (the note) to the store (the server), and the reply comes back in parcels
-  (packets). The page ends by naming the real terms, and the analogy is not carried further.
+  everyone follows the same rules of the road, which is what protocols are. The computers do the
+  driving, as in the cartoon, and they run a relay: the reader's Macintosh carries the note (the
+  request) over the first leg, and each computer along the way (a router) carries it over the next,
+  toward the store (the server). The reply comes back the same way in parcels (packets) kept small
+  enough for every car's trunk. The page ends by naming the real terms, and the analogy is not
+  carried further.
 - **Don't extend it to everything.** Proxies, encryption, and name lookup (DNS) are explained plainly
-  or with their own short comparison on their own pages, never as more highway or courier detail.
+  or with their own short comparison on their own pages, never as more highway or relay detail.
   When an extension would need explaining itself, leave it out.
 - **Each protocol page uses the comparison that fits best,** such as a card catalog for Gopher or a
   bulletin board for newsgroups, and only one.
@@ -202,7 +205,7 @@ Group the protocols by the kind of place they lead to:
 | Page | Protocols |
 |---|---|
 | Welcome | (the letter) |
-| Rules of the Road | the information superhighway; protocols; requests, servers, and packets |
+| Rules of the Road | the information superhighway; protocols; requests, servers, packets, and routers |
 | Addresses | how to read `scheme://host:port/path`; names and numbers (DNS) in one paragraph |
 | The Web | `http:`; encryption and proxies |
 | Gopher | `gopher:` |
