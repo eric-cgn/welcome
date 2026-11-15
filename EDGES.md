@@ -22,6 +22,7 @@ left. Settled items move to the bottom with what was decided.
 | 12 | people.html | "Finger was written by Les Earnest at Stanford University in 1971": from memory, needs a source. |
 | 13 | places.html | textfiles.com's files came from bulletin boards "people call by modem". |
 | 14 | gopher.html | "A few kinds of Gopher item lead to things Mill can't open, and Mill leaves those out of the menu." Vague; and Mill will show telnet and CSO items instead (backlog). Rewrite once Mill's behavior is settled: name the two kinds, and say what Mill does when one is clicked. |
+| 15 | mac.html | The Tip on browsing archives on your own disks, and "also opens the wrapped files": from the 2.1 plan (`file:` always reads in place, no Support Random Access checkbox). Check against the built `v2.1`. |
 
 ## Decisions pending
 
