@@ -264,6 +264,7 @@ Group the protocols by the kind of place they lead to:
 | The World Wide Web | `web.html` | `http:`; encryption and proxies |
 | Gopher | `gopher.html` | `gopher:` |
 | Files | `files.html` | `ftp:` |
+| Archives | `archives.html` | what a downloaded file may be wrapped in: encoding for travel (BinHex, MacBinary), compression (gzip), and archives of many files; what Mill unpacks itself and what needs another program |
 | Finding People | `people.html` | `finger:`, `whois:`, `ldap:` |
 | Reference | `reference.html` | `dict:`, `time:` |
 | Newsgroups | `news.html` | `news:`, `nntp:` |
