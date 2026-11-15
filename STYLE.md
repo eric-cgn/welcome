@@ -141,7 +141,8 @@ never hyped. Think of a well-read friend at the next desk in a university comput
 - **Plain words, short sentences, active voice.** Address the reader as "you."
 - **Warm but precise.** Delight is welcome; hype is not. No exclamation marks, no superlatives, no
   "amazing" or "awesome".
-- **Concrete first.** Start with an address to type and what the reader will see, then explain it.
+- **Concrete, then hands-on.** Explain with real examples (a real address, what the reader will
+  see), and keep the Try this for the end, once the reader understands what they are about to do.
 - **Define each term once**, in one sentence, where it first appears. The glossary has the rest.
 - **Never "simply", "just", "easy", or "obviously".** What is easy for us may not be easy for the
   reader.
@@ -278,12 +279,13 @@ Group the protocols by the kind of place they lead to:
 
 Every protocol page follows the same order:
 
-1. **Try this:** one address to type, on the first screen.
-2. **What it is:** a sentence of metaphor, then a sentence on how it works.
-3. **A little history:** two or three sentences, naming the rulebook.
-4. **What's there:** real places, described in our voice.
-5. **Good manners.**
-6. **What Mill needs:** for example, the plug-in that provides it.
+1. **What it is:** a sentence of metaphor, then a sentence on how it works.
+2. **A little history:** two or three sentences, naming the rulebook.
+3. **What's there:** real places, described in our voice.
+4. **Good manners.**
+5. **What Mill needs:** for example, the plug-in that provides it.
+6. **Try this:** last, once the protocol has been explained and anything it needs has been set up.
+   On a page that covers several protocols, each protocol's section ends with its own Try this.
 
 ## Linked places
 

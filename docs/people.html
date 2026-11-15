@@ -13,6 +13,31 @@ speaks all three, with the plug-ins described at the end of this page.
 
 <H2>Finger</H2>
 
+<P>Finger answers a simple question: who is this person? You send a person's name to a computer,
+and it answers with what that computer has been set up to share about them: often a real name,
+when they last connected, and a short note they wrote themselves, called a plan.
+
+<P>A plan is a little like a note pinned to an office door, except that anyone on the Internet can
+read it.
+
+<P>If you leave the name out, as the first step of the Try this below
+does, many computers answer with a list of the
+people using them. Some computers answer finger requests. Many don't, to protect their users'
+privacy.
+
+<P>Happy Net Box, the server in the Try this below, is run by Ben Brown for people who like to write a
+few lines for others to find.
+
+<!-- EDGE: a weather chart by finger is a playful use of the protocol -->
+<P>Finger isn't only for people. The server <TT>graph.no</TT> answers with a weather chart, drawn in
+letters and symbols, for the town you name. Try
+<A HREF="finger://graph.no/oslo"><TT>finger://graph.no/oslo</TT></A>, or put the name of a town
+near you in place of <TT>oslo</TT>.
+
+<!-- EDGE: names Les Earnest and Stanford as finger's origin -->
+<P>Finger was written by Les Earnest at Stanford University in 1971. Its rulebook is RFC 1288,
+published in 1991.
+
 <P><TABLE WIDTH="100%" BORDER=1 CELLPADDING=6 CELLSPACING=0><TR><TD>
 <TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD WIDTH=40><IMG SRC="images/try.gif" WIDTH=32 HEIGHT=32 ALT=""></TD><TD VALIGN=MIDDLE><B>Try this</B></TD></TR></TABLE>
 <OL>
@@ -27,37 +52,7 @@ press Return.
 <P>Mill shows what that person wrote.
 </TD></TR></TABLE>
 
-<P>Finger answers a simple question: who is this person? You send a person's name to a computer,
-and it answers with what that computer has been set up to share about them: often a real name,
-when they last connected, and a short note they wrote themselves, called a plan.
-
-<P>A plan is a little like a note pinned to an office door, except that anyone on the Internet can
-read it.
-
-<P>If you leave the name out, as in the first step above, many computers answer with a list of the
-people using them. Some computers answer finger requests. Many don't, to protect their users'
-privacy.
-
-<P>Happy Net Box, the server in the steps above, is run by Ben Brown for people who like to write a
-few lines for others to find.
-
-<!-- EDGE: a weather chart by finger is a playful use of the protocol -->
-<P>Finger isn't only for people. The server <TT>graph.no</TT> answers with a weather chart, drawn in
-letters and symbols, for the town you name. Try
-<A HREF="finger://graph.no/oslo"><TT>finger://graph.no/oslo</TT></A>, or put the name of a town
-near you in place of <TT>oslo</TT>.
-
-<!-- EDGE: names Les Earnest and Stanford as finger's origin -->
-<P>Finger was written by Les Earnest at Stanford University in 1971. Its rulebook is RFC 1288,
-published in 1991.
-
 <H2>Whois</H2>
-
-<P><TABLE WIDTH="100%" BORDER=1 CELLPADDING=6 CELLSPACING=0><TR><TD>
-<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD WIDTH=40><IMG SRC="images/try.gif" WIDTH=32 HEIGHT=32 ALT=""></TD><TD VALIGN=MIDDLE><B>Try this</B></TD></TR></TABLE>
-<P>Type <A HREF="whois://whois.iana.org/edu"><TT>whois://whois.iana.org/edu</TT></A> and press
-Return. Mill shows who looks after the names that end in <TT>edu</TT>, and how to reach them.
-</TD></TR></TABLE>
 
 <P>Whois answers a different question: who is responsible for a name? A name such as
 <TT>1in1e6.com</TT> is registered to the person or organization that uses it, and each group of
@@ -72,19 +67,13 @@ slash, and the name you are asking about.
 
 <P>Whois is described in RFC 954, published in 1985.
 
-<H2>Directories</H2>
-
 <P><TABLE WIDTH="100%" BORDER=1 CELLPADDING=6 CELLSPACING=0><TR><TD>
 <TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD WIDTH=40><IMG SRC="images/try.gif" WIDTH=32 HEIGHT=32 ALT=""></TD><TD VALIGN=MIDDLE><B>Try this</B></TD></TR></TABLE>
-<OL>
-<LI>Type <A HREF="ldap://db.debian.org/"><TT>ldap://db.debian.org/</TT></A> and press Return. Mill
-lists the directories this server keeps.
-<LI>Click <TT>dc=debian,dc=org</TT>.
-</OL>
-
-<P>Mill shows the two entries inside it: one for the project's members (<TT>ou=users</TT>) and one
-for its computers (<TT>ou=hosts</TT>).
+<P>Type <A HREF="whois://whois.iana.org/edu"><TT>whois://whois.iana.org/edu</TT></A> and press
+Return. Mill shows who looks after the names that end in <TT>edu</TT>, and how to reach them.
 </TD></TR></TABLE>
+
+<H2>Directories</H2>
 
 <P>A directory is a list of people, and sometimes of things, kept on a server so that it can be
 searched. It is a little like a telephone book. Unlike a telephone book, a directory is arranged the
@@ -99,7 +88,7 @@ built to an earlier, larger standard called X.500.
 the computers on their own network. If yours has one, the people who run its network can tell you
 its server's name.
 
-<P>The directory in the steps above belongs to the Debian project, which makes a free operating
+<P>The directory in the Try this below belongs to the Debian project, which makes a free operating
 system: software that does for other computers what the System does for your Macintosh. The project
 keeps a public directory of its members and its computers.
 
@@ -108,6 +97,18 @@ of a person's name in the Name box, and click Search.
 
 <P>If a directory asks for a name and password, Mill asks you for them. They travel as plain text,
 so use a password you don't use anywhere else.
+
+<P><TABLE WIDTH="100%" BORDER=1 CELLPADDING=6 CELLSPACING=0><TR><TD>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD WIDTH=40><IMG SRC="images/try.gif" WIDTH=32 HEIGHT=32 ALT=""></TD><TD VALIGN=MIDDLE><B>Try this</B></TD></TR></TABLE>
+<OL>
+<LI>Type <A HREF="ldap://db.debian.org/"><TT>ldap://db.debian.org/</TT></A> and press Return. Mill
+lists the directories this server keeps.
+<LI>Click <TT>dc=debian,dc=org</TT>.
+</OL>
+
+<P>Mill shows the two entries inside it: one for the project's members (<TT>ou=users</TT>) and one
+for its computers (<TT>ou=hosts</TT>).
+</TD></TR></TABLE>
 
 <H2>Good manners</H2>
 
