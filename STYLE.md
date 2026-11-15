@@ -256,8 +256,17 @@ read well in any other browser.
   Mill's page area.
 - **One idea per screen.** Paragraphs of four lines or fewer on a Plus screen.
 - **Under about 16 KB of HTML per page.**
+- **Links to us:** the first mention of Mill on a page links to `http://mill.1in1e6.com/`, and the
+  first mention of OneInAMillion Software links to `http://1in1e6.com/`. Later mentions are plain.
 - **Images:**
-  - 1-bit GIFs, drawn for the actual pixel size, never dithered photographs.
+  - Every image is published as a 1-bit GIF, converted before publishing; never rely on Mill to
+    dither. Originals, in any format, are kept in `art/` (not served), and `tools/onebit.sh` makes
+    the GIF from them.
+  - Drawings, not photographs: bold lines and solid blacks, little fine hatching, which breaks up
+    when shrunk.
+  - Illustrations are single-panel cartoons in the style of a newspaper editorial cartoon: pen and
+    ink, labels on the things that matter. Labels are lettered in afterward, in a bitmap typeface,
+    so they stay crisp at 1 bit.
   - Always give `WIDTH`, `HEIGHT`, and `ALT`.
   - Nothing wider than about 460 pixels.
 - **Every address is shown in `<TT>`** as well as linked, so the reader can read it and type it.
