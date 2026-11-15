@@ -349,7 +349,7 @@ read well in any other browser.
   (Important, kept for safety: passwords and plain text). `book.gif` marks the Glossary and
   `where.gif` Where to Go. The icon's ALT is empty because the bold label right beside it says the
   same thing.
-- **Navigation:** the same Contents | Previous | Next line, centered, at the bottom of every page
+- **Navigation:** the same Previous | Contents | Next line, centered, at the bottom of every page
   only (screen space on a Plus is too scarce for a second copy at the top),
   following the reading order: Welcome, Contents, then the pages in the order of the outline. The
   list of pages is on the Contents page only; no other page repeats it. The current page's own
