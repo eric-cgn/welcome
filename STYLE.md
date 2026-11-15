@@ -206,7 +206,8 @@ Group the protocols by the kind of place they lead to:
 
 | Page | Protocols |
 |---|---|
-| Welcome | (the letter) |
+| Welcome | (the letter), `index.html` |
+| Contents | the list of pages, `contents.html` |
 | Rules of the Road | the information superhighway; protocols; requests, servers, packets, and routers |
 | Addresses | how to read `scheme://host:port/path`; names and numbers (DNS) in one paragraph |
 | The World Wide Web | `http:`; encryption and proxies |
@@ -278,7 +279,10 @@ read well in any other browser.
   - Nothing wider than about 460 pixels.
 - **Every address is shown in `<TT>`** as well as linked, so the reader can read it and type it.
   Reading an address is a skill the guide teaches.
-- **Navigation:** the same Contents | Previous | Next line at the top and bottom of every page.
+- **Navigation:** the same Contents | Previous | Next line at the top and bottom of every page,
+  following the reading order: Welcome, Contents, then the pages in the order of the outline. The
+  list of pages is on the Contents page only; no other page repeats it. The current page's own
+  entry in the line is plain text, not a link.
 - **File names:** short and lowercase (`gopher.html`), so they are easy to type.
 
 ## Marking judgment calls
