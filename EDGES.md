@@ -21,6 +21,7 @@ left. Settled items move to the bottom with what was decided.
 | 11 | people.html | The finger weather chart (graph.no). |
 | 12 | people.html | "Finger was written by Les Earnest at Stanford University in 1971": from memory, needs a source. |
 | 13 | places.html | textfiles.com's files came from bulletin boards "people call by modem". |
+| 14 | gopher.html | "A few kinds of Gopher item lead to things Mill can't open, and Mill leaves those out of the menu." Vague; and Mill will show telnet and CSO items instead (backlog). Rewrite once Mill's behavior is settled: name the two kinds, and say what Mill does when one is clicked. |
 
 ## Decisions pending
 
@@ -55,6 +56,15 @@ left. Settled items move to the bottom with what was decided.
 - **Glossary:** written last, from the terms the pages define.
 - **Outside the guide:** `http://1in1e6.com/` says "classic Macs" (out of voice); Mill's https alert
   says "TLS".
+
+## For Mill (backlog; for the Mill session)
+
+- **Gopher: show telnet and CSO items.** Today `plugins/internet/gopher.c:76` drops Gopher types 8 and
+  T (telnet, tn3270) and 2 (CSO) from menus. Eric: show them as links (`telnet://host:port/`, and
+  the like) and let Mill give its ordinary error for a protocol it doesn't speak. The guide's Gopher
+  page changes to match (edge 14).
+- **https alert wording:** "TLS requires an HTTP proxy." uses a post-1997 term.
+- **Default bookmarks for 2.1:** `BOOKMARKS.md`.
 
 ## Settled
 
