@@ -43,9 +43,11 @@ left. Settled items move to the bottom with what was decided.
 - **Pictures and images:** "picture" in the guide's prose, Mill's exact label ("image") when quoting
   Mill, tied together once on The World Wide Web page. Agreed in principle; not yet in STYLE.md or
   the pages.
-- **Cartoons:** five more proposed (Names and Numbers, Archives, Finding People, Newsgroups,
-  Etiquette), prompts given. Names and Numbers' cartoon extends the highway (an edge). Captions and
-  in-picture lettering to be reviewed.
+- **Cartoons (parked):** five proposed (Names and Numbers, Archives, Finding People, Newsgroups,
+  Etiquette); prompts in `art/prompts.md`. The first generations weren't consistent enough with the
+  Rules of the Road cartoon, so this waits. Ideas for later: give Gemini `art/road.jpg` as the style
+  and character reference with each prompt; generate all five in one session. Names and Numbers'
+  cartoon extends the highway (an edge).
 - **StuffIt Expander:** in 2.1 Mill browses BinHex and MacBinary itself; StuffIt (`.sit`) and Compact
   Pro (`.cpt`) still need Expander, and no Mac copy has been found to point to yet.
 - **Addresses page:** Command-L (Open Location) as step 1; a Tip that Mill adds `http://` itself.
