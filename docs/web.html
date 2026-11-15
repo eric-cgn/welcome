@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The World Wide Web</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<TABLE WIDTH=460 ALIGN=CENTER BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD>
+<H1>The World Wide Web</H1>
+
+<P>The World Wide Web (the Web) is made of pages that are linked to one another, kept on servers all
+over the Internet. You are reading a Web page now. Its protocol is HTTP, so Web addresses begin with
+<TT>http</TT>. As you read in Addresses, HTTP stands for Hypertext Transfer Protocol, and hypertext
+is text with links in it.
+
+<P><TABLE WIDTH="100%" BORDER=1 CELLPADDING=6 CELLSPACING=0><TR><TD>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD WIDTH=40><IMG SRC="images/try.gif" WIDTH=32 HEIGHT=32 ALT=""></TD><TD VALIGN=MIDDLE><B>Try this</B></TD></TR></TABLE>
+<P>Type <TT>http://info.cern.ch/</TT> and press Return.
+
+<P><A HREF="http://mill.1in1e6.com/">Mill</A> opens a page from CERN, the physics laboratory in
+Switzerland where the Web began. From there you can browse a copy of the first Web site.</TD></TR></TABLE>
+
+<H2>A little history</H2>
+
+<P>Tim Berners-Lee, working at CERN, wrote the first Web server and the first program for reading
+Web pages in 1990. HTTP is described in RFC 1945, published in 1996.
+
+<H2>Pages and links</H2>
+
+<P>A Web page is a document, much like one you might write on your Macintosh, with links in it and
+often pictures. Each link holds the address of another page, a picture, or a file, on the same
+server or on any other.
+
+<P>Pages are written in HTML, the Hypertext Markup Language: plain text with instructions that tell
+Mill where the headings, links, and pictures go. To see the HTML of the page you are reading, choose
+Page Source from the View menu.
+
+<H2>Web sites and home pages</H2>
+
+<P>A collection of pages kept together by one person or organization is called a Web site. A site's
+home page is its front page, the one its other pages are reached from.
+
+<P>Mill has a home page too: the page it opens when it starts up, and when you choose Home from the
+Go menu. To choose your own, choose Preferences from the Edit menu to open Mill's Settings page,
+type the page's address in Home page, and click Save.
+
+<H2>Pictures</H2>
+
+<P>Mill shows pictures in the GIF and JPEG formats, among others. Your screen shows black and white, so Mill draws
+shades of gray as patterns of black and white dots.
+
+<P>Pictures usually take longer to arrive than text. If pages load slowly, you can turn off Load
+images automatically on the Settings page. A picture then waits until you ask for it: hold the mouse button
+down on it, and choose Load Image from the menu that appears.
+
+<H2>Encryption and proxies</H2>
+
+<P>Some sites already use encryption, and the trend is likely to continue. Encryption scrambles the
+packets between two computers, so that no one along the way can read what they carry. The addresses of
+encrypted pages begin with <TT>https</TT>; the <TT>s</TT> stands for secure.
+
+<P>Working with encryption requires a powerful computer, so many Internet providers also include a
+service called a proxy. A proxy is a computer that makes requests for you. When you open an
+<TT>https</TT> address, Mill sends the request to the proxy, the proxy fetches the page from the
+encrypted site, and then sends it on to Mill.
+
+<P>To use a proxy, you need its name and port number from your Internet provider. Then:
+
+<OL>
+<LI>Choose Preferences from the Edit menu. Mill opens its Settings page.
+<LI>Under Protocols, find HTTP.
+<LI>Type the proxy's name, a colon, and its port number in HTTP proxy.
+<LI>Click the Enable proxy checkbox so that it is checked.
+<LI>Click Save.
+</OL>
+
+<P>Mill then sends its Web requests through the proxy, except to the names you list in Proxy excluded
+domains. Without a proxy, Mill can't open <TT>https</TT> addresses, and tells you it needs one.
+
+<P><TABLE WIDTH="100%" BORDER=1 CELLPADDING=6 CELLSPACING=0><TR><TD>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD WIDTH=40><IMG SRC="images/important.gif" WIDTH=32 HEIGHT=32 ALT=""></TD><TD VALIGN=MIDDLE><B>Important</B></TD></TR></TABLE>
+<P>Only the part of the trip between the proxy and the site is encrypted. Between your Macintosh and
+the proxy, everything you send, including passwords, can be read along the way. Send a password
+through a proxy only if you trust the people who run it.</TD></TR></TABLE>
+
+<H2>Places to visit</H2>
+
+<P><TT>http://textfiles.com/</TT> is a large library of text files from computer bulletin boards,
+the systems people dial into with a modem to trade messages and files: stories, humor, history,
+and more. It is kept by Jason Scott.
+
+<P>You'll find more in <A HREF="places.html">Where to Go</A>.
+
+<P ALIGN=CENTER><A HREF="contents.html">Contents</A> | <A HREF="names.html">Previous</A> | <A HREF="gopher.html">Next</A><BR>&nbsp;
+</TD></TR></TABLE>
+</BODY>
+</HTML>

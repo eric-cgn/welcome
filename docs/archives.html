@@ -1,0 +1,153 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>Archives</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<TABLE WIDTH=460 ALIGN=CENTER BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD>
+<H1>Archives</H1>
+
+<P>Most Macintosh software you can download from the Internet arrives wrapped, sometimes in more
+than one layer. The end of a file's name tells you which wrapping it has, such as <TT>.hqx</TT> or
+<TT>.sit</TT>. This page explains the wrappings, what <A HREF="http://mill.1in1e6.com/">Mill</A>
+does with each, and which programs open the rest.
+
+<H2>Why Macintosh files are wrapped</H2>
+
+<P>A Macintosh file can have two parts, called forks. The data fork holds a document's contents,
+such as the words of a letter. The resource fork holds things the Macintosh uses, such as an
+application's menus, icons, and program code. The Finder also keeps information with each file,
+such as which application opens it.
+
+<P>Most other computers keep only one part for each file. A Macintosh file stored on one of them as
+it is would lose its resource fork and its Finder information, and an application without its
+resource fork doesn't work. So Macintosh files are usually wrapped before they travel.
+
+<P>There are three kinds of wrapping, and each has its own name. Encoding keeps a file whole.
+Compression makes a file smaller. An archive puts many files into one.
+
+<H2>Encoding: keeping a file whole</H2>
+
+<P>Encoding puts both forks and the Finder information into a single file that any computer can
+store. Two encodings are common:
+
+<UL>
+<LI><B>MacBinary,</B> with names ending in <TT>.bin</TT>.
+<LI><B>BinHex,</B> with names ending in <TT>.hqx</TT>. A BinHex file is written entirely in ordinary
+text characters, so it can also travel in e-mail and newsgroups, which are made for text. It is
+usually about a third larger than the same file in MacBinary.
+</UL>
+
+<P>Both encodings have been in use since 1985.
+
+<!-- EDGE: formats per Mill source as of today; confirm with Eric whether more are coming -->
+<P>When you download a file in MacBinary, Mill decodes it as it saves it. What you get is the
+Macintosh file itself, whole, and Mill says so at the bottom of its window: <TT>Saved "name",
+decoded from MacBinary.</TT> To have Mill save MacBinary files without decoding them, choose
+Preferences from the Edit menu and turn off Decode MacBinary.
+
+<P>Mill saves a BinHex file as it is, and marks it so that StuffIt Expander, a free program
+described below, opens it when you double-click it.
+
+<H2>Compression: making a file smaller</H2>
+
+<P>Compression makes a file smaller, so it takes less time to download. When the file is unpacked,
+it comes back exactly as it was.
+
+<P><B>gzip,</B> with names ending in <TT>.gz</TT>, compresses one file. It is common on Unix
+workstations, and it is described in RFC 1952, published in 1996.
+
+<P>When a <TT>.gz</TT> file holds a page, a text file, or a picture that Mill can show, Mill unpacks
+it as it arrives and shows it. Mill saves any other <TT>.gz</TT> file as it is. A server can also
+compress a page with gzip before sending it. Mill unpacks that page as it arrives, and you see the
+page as usual.
+
+<H2>Archives: many files in one</H2>
+
+<P>An archive holds many files in a single file, and it can hold folders too. Most archives are also
+compressed. Software usually arrives as an archive: an application, its Read Me, and its documents,
+packed together.
+
+<P>These are the archives you are likely to find:
+
+<UL>
+<LI><B>StuffIt,</B> ending in <TT>.sit</TT>, the most common kind for Macintosh software.
+<LI><B>Compact Pro,</B> ending in <TT>.cpt</TT>, also made for the Macintosh.
+<LI><B>Zip,</B> ending in <TT>.zip</TT>, common on IBM PCs.
+<LI><B>tar,</B> ending in <TT>.tar</TT>, common on Unix workstations. A tar archive isn't compressed,
+so it is often compressed with gzip afterward, and its name ends in <TT>.tar.gz</TT>.
+</UL>
+
+<P>An archive can also be self-extracting, with a name ending in <TT>.sea</TT>. A self-extracting
+archive is an application: double-click it, and it opens itself, with no other program needed.
+Because it is an application, it needs its resource fork, so it usually travels encoded, as
+<TT>.sea.bin</TT> or <TT>.sea.hqx</TT>.
+
+<H2>Layers</H2>
+
+<P>Wrappings stack, and a file's name lists them in order. A file named <TT>game.sit.hqx</TT> is a
+StuffIt archive that was then encoded in BinHex. To unwrap it, work from right to left: decode the
+BinHex, then open the StuffIt archive.
+
+<P><TABLE WIDTH="100%" BORDER=1 CELLPADDING=6 CELLSPACING=0><TR><TD>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD WIDTH=40><IMG SRC="images/try.gif" WIDTH=32 HEIGHT=32 ALT=""></TD><TD VALIGN=MIDDLE><B>Try this</B></TD></TR></TABLE>
+<P>This downloads Compact Pro, by Bill Goodman, from the Macintosh software archive kept by FUNET,
+the Finnish University and Research Network. The file is about 122K, and it has two layers: a
+self-extracting archive, encoded in MacBinary.
+
+<OL>
+<LI>Type <TT>http://ftp.funet.fi/pub/mac/arcers/compact-pro-134.bin</TT> and press Return.
+<LI>Mill asks where to save the file. Choose a folder, and click Save.
+<LI>When the download is done, Mill says <TT>Saved "compact-pro-134", decoded from
+MacBinary.</TT> Mill has removed the first layer.
+<LI>In the Finder, open the folder you chose and double-click <TT>compact-pro-134</TT>. It is the
+self-extracting archive. It opens itself and asks where to put what's inside.
+</OL>
+
+<P>You now have Compact Pro, a program for opening and making Compact Pro archives. Compact Pro is
+shareware: you may try it for free, and if you keep using it, you pay its author the fee its
+documents ask for.</TD></TR></TABLE>
+
+<H2>Looking inside an archive</H2>
+
+<!-- EDGE: Mill 2.1 lets you explore archives; fill in from the 2.1 source (formats, addresses, steps) before publishing -->
+
+<H2>Programs for the rest</H2>
+
+<P>For formats Mill doesn't open, use a program made for them. Many Macintosh software archives offer
+these programs, often in MacBinary, which Mill decodes for you.
+
+<P><B>StuffIt Expander,</B> a free program made by Aladdin Systems, opens StuffIt archives, Compact
+Pro archives, and BinHex files, and it can undo several layers at once. Mill marks the StuffIt and
+BinHex files it saves so that StuffIt Expander opens them when you double-click them.
+
+<!-- EDGE: four period program names on one page (nostalgia density), and their exact names and formats need Eric's check -->
+<P>Other free programs open the rest, such as UnZip for Zip archives, suntar for tar archives, and
+MacGzip for gzip files.
+
+<H2>Disk images</H2>
+
+<P>Some software comes as a disk image, with a name ending in <TT>.image</TT>, <TT>.img</TT>, or
+<TT>.dsk</TT>. A disk image is a copy of a whole floppy disk. Apple's Disk Copy program makes a real
+floppy disk from it, and Mill marks the disk images it saves so that Disk Copy opens them.
+
+<H2>File name endings at a glance</H2>
+
+<!-- EDGE: formats per Mill source as of today; confirm with Eric whether more are coming -->
+<TABLE WIDTH="100%" BORDER=1 CELLPADDING=3 CELLSPACING=0>
+<TR><TH ALIGN=LEFT>Ending</TH><TH ALIGN=LEFT>What it is</TH><TH ALIGN=LEFT>What Mill does</TH></TR>
+<TR><TD VALIGN=TOP><TT>.bin</TT></TD><TD VALIGN=TOP>MacBinary: a whole Macintosh file</TD><TD VALIGN=TOP>Decodes it as it saves it</TD></TR>
+<TR><TD VALIGN=TOP><TT>.hqx</TT></TD><TD VALIGN=TOP>BinHex: a whole Macintosh file, as text</TD><TD VALIGN=TOP>Saves it for StuffIt Expander</TD></TR>
+<TR><TD VALIGN=TOP><TT>.gz</TT></TD><TD VALIGN=TOP>gzip: one compressed file</TD><TD VALIGN=TOP>Shows a page, text, or picture inside; saves anything else as it is</TD></TR>
+<TR><TD VALIGN=TOP><TT>.sit</TT></TD><TD VALIGN=TOP>StuffIt archive</TD><TD VALIGN=TOP>Saves it for StuffIt Expander</TD></TR>
+<TR><TD VALIGN=TOP><TT>.cpt</TT></TD><TD VALIGN=TOP>Compact Pro archive</TD><TD VALIGN=TOP>Saves it for Compact Pro</TD></TR>
+<TR><TD VALIGN=TOP><TT>.sea</TT></TD><TD VALIGN=TOP>Self-extracting archive</TD><TD VALIGN=TOP>Usually arrives as <TT>.sea.bin</TT> or <TT>.sea.hqx</TT></TD></TR>
+<TR><TD VALIGN=TOP><TT>.zip</TT></TD><TD VALIGN=TOP>Zip archive</TD><TD VALIGN=TOP>Saves it as it is</TD></TR>
+<TR><TD VALIGN=TOP><TT>.tar</TT></TD><TD VALIGN=TOP>tar archive</TD><TD VALIGN=TOP>Saves it as it is</TD></TR>
+<TR><TD VALIGN=TOP><TT>.image</TT></TD><TD VALIGN=TOP>Disk image (also <TT>.img</TT> and <TT>.dsk</TT>)</TD><TD VALIGN=TOP>Saves it for Disk Copy</TD></TR>
+</TABLE>
+
+<P ALIGN=CENTER><A HREF="contents.html">Contents</A> | <A HREF="files.html">Previous</A> | <A HREF="people.html">Next</A><BR>&nbsp;
+</TD></TR></TABLE>
+</BODY>
+</HTML>

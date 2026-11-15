@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>Names and Numbers</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<TABLE WIDTH=460 ALIGN=CENTER BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD>
+<H1>Names and Numbers</H1>
+
+<P>In Addresses, you read the name of a server: <TT>welcome.1in1e6.com</TT>. Names are for people.
+The computers on the Internet find each other by number. This page explains how
+<A HREF="http://mill.1in1e6.com/">Mill</A> turns a name into a number, and what the other number you
+sometimes see in an address means.
+
+<H2>Numbers for computers</H2>
+
+<P>Every packet carries the number of the computer it is going to. As you read in Rules of the Road,
+routers relay packets from one computer to the next; the number is how each router knows which way
+to send a packet.
+
+<P>Your Macintosh writes a computer's number as four smaller numbers, each from 0 to 255, separated
+by periods: for example, <TT>192.0.2.1</TT>.
+
+<P>The number is called an IP address. IP stands for Internet Protocol, the protocol that carries packets
+across the Internet, described in RFC 791, published in 1981. An IP address is a different thing from the addresses you
+type into Mill, so this guide calls it a number.
+
+<H2>Names for people</H2>
+
+<P>Numbers suit computers, but they are hard for people to remember, so servers also have names.
+Before Mill can send a request to <TT>welcome.1in1e6.com</TT>, your Macintosh needs the number that
+goes with that name. It asks a computer called a name server, which looks up the number and sends it
+back. All of this happens before the page begins to arrive.
+
+<P>Your Internet provider, or the people who run the network at your school or office, tell you
+which name server to use. Its number is set in the MacTCP control panel, or in the TCP/IP control
+panel on newer system software.
+
+<P>Name servers all over the Internet work together to keep track of names and their numbers.
+Together they are called the Domain Name System, or DNS, described in RFCs 1034 and 1035, published
+in 1987.
+
+<P>A name is read from right to left, from the general to the specific. The groups of names are
+called domains: <TT>com</TT> is a large domain, <TT>1in1e6.com</TT> is our domain within it, and
+<TT>welcome.1in1e6.com</TT> is a name we chose within ours. Some endings tell you who a name belongs
+to: names ending in <TT>edu</TT> belong to colleges and universities in the United States, and names
+ending in <TT>gov</TT> to government bodies in the United States.
+
+<H2>Ports</H2>
+
+<P>One server can speak more than one protocol. The same computer might send Web pages and Gopher
+menus, for example. To keep the requests apart, the server waits for each protocol's requests at its
+own numbered port.
+
+<P>Each protocol has a usual port, agreed on so that both computers know where to meet: 80 for the
+Web, 70 for Gopher, and 119 for newsgroups. When an address doesn't name a port, Mill uses the usual
+one for its protocol. That is why you rarely type a port.
+
+<H2>Addresses that name a port</H2>
+
+<P>Now and then, a server uses a port other than the usual one. Its address then names the port: a
+colon and the port number come right after the server's name.
+
+<P><TABLE WIDTH="100%" BORDER=1 CELLPADDING=6 CELLSPACING=0><TR><TD>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD WIDTH=40><IMG SRC="images/try.gif" WIDTH=32 HEIGHT=32 ALT=""></TD><TD VALIGN=MIDDLE><B>Try this</B></TD></TR></TABLE>
+<P>Type <TT>http://welcome.1in1e6.com:80/contents.html</TT> and press Return.
+
+<P>Mill opens the Contents page, the same page as <TT>http://welcome.1in1e6.com/contents.html</TT>.
+The <TT>:80</TT> names the usual port for the Web, so it changes nothing. To come back to this page,
+click Names and Numbers in the list.</TD></TR></TABLE>
+
+<!-- EDGE: a call-back to the exit sign in the Rules of the Road cartoon -->
+<P>Port 80 is the exit the computers in the cartoon were heading for.
+
+<P ALIGN=CENTER><A HREF="contents.html">Contents</A> | <A HREF="addresses.html">Previous</A> | <A HREF="web.html">Next</A><BR>&nbsp;
+</TD></TR></TABLE>
+</BODY>
+</HTML>

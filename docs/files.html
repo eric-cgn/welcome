@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>Files</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<TABLE WIDTH=460 ALIGN=CENTER BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD>
+<H1>Files</H1>
+
+<P>Much of what people share on the Internet is files: programs, documents, pictures, and fonts that
+you can copy to your Macintosh and keep. The protocol made for this is FTP, the File Transfer
+Protocol. An FTP server holds folders of files, and anyone it lets in can copy them.
+
+<P><TABLE WIDTH="100%" BORDER=1 CELLPADDING=6 CELLSPACING=0><TR><TD>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD WIDTH=40><IMG SRC="images/try.gif" WIDTH=32 HEIGHT=32 ALT=""></TD><TD VALIGN=MIDDLE><B>Try this</B></TD></TR></TABLE>
+<P>Type <TT>ftp://ftp.jussieu.fr/pub/mac/info-mac/</TT> and press Return.
+
+<P><A HREF="http://mill.1in1e6.com/">Mill</A> logs in to the server and shows a folder of the Info-Mac
+Archive as a page: a list of folders and files, each with a small icon. Click
+<TT>00readme.txt</TT> to read the archive's welcome note.</TD></TR></TABLE>
+
+<H2>What it is</H2>
+
+<P>An FTP server works much like a disk you can open from far away. Mill shows each of its folders as
+a page, with the size of each file beside it. Click a folder to open it, and click Up, at the top of
+the page, to go back to the folder that holds it.
+
+<P>Unlike a disk, though, a file can't be opened where it sits. Mill copies it to your Macintosh
+first. Text and pictures appear in Mill's window, and most other files are saved on your disk.
+
+<H2>Logging in</H2>
+
+<P>Most FTP servers ask for a name and a password. Public archives let anyone in under the name
+anonymous, so this is called anonymous FTP. Mill logs in that way for you, unless you give it a name
+or have saved one for that server.
+
+<P>By custom, the password for anonymous FTP is your e-mail address, so the people who run the server
+know who is visiting. Mill sends <TT>mill@</TT> unless you change it: choose Preferences from the
+Edit menu, and under FTP, type your address in Anonymous login password.
+
+<H2>Saving files</H2>
+
+<P>When you click a file Mill can't show, Mill asks where to save it, in the same kind of dialog box
+you use to save a document. Mill also marks common kinds of file so that the Finder knows which
+application opens them.
+
+<P>Macintosh files often travel packed in one of two ways. A file whose name ends in <TT>.bin</TT> is
+usually in MacBinary, which keeps a Macintosh file together with the information the Finder keeps about it,
+so that any computer can store it. Mill unpacks MacBinary as it saves, and you get the original file.
+
+<P>A file whose name ends in <TT>.hqx</TT> is in BinHex, which turns a Macintosh file into plain text,
+so that it can go where only text can, such as e-mail. Mill marks a BinHex file to open with StuffIt
+Expander, a separate program that turns it back into the original. Many files are also compressed,
+packed smaller so that they take less time to copy. Their names often end in <TT>.sit</TT>, and
+StuffIt Expander unpacks them too.
+
+<H2>A little history</H2>
+
+<P>FTP is one of the oldest protocols in use: its first version was written in 1971. The rulebook
+most computers follow is RFC 959, published in 1985.
+
+<H2>What's there</H2>
+
+<P><B>The Info-Mac Archive</B> is a large collection of Macintosh software gathered by volunteers,
+sorted into folders by kind: games, fonts, tools for disks and files, and many more. Much of it runs
+on a Compact Macintosh. The copy at <TT>ftp.jussieu.fr</TT> is kept by LIP6, a computer science
+laboratory in Paris.
+
+<H2>Good manners</H2>
+
+<P>Busy archives are often copied to other servers, called mirrors, so that no one server has to
+carry every visitor. The Info-Mac Archive asks visitors to use its mirrors, and the copy above is one
+of them. When an archive lists mirrors, choose one near you.
+
+<P>Many FTP servers let in only so many visitors at a time. If one turns you away, try again later.
+
+<H2>Sending files</H2>
+
+<P>If you have an account on an FTP server, such as one your school or office gives you, Mill can send
+files to it too. Type your name and an @ before the server's name, as in
+<TT>ftp://<I>name</I>@<I>server</I>/</TT>. Mill asks for your password, and each folder's page ends
+with a place to choose a file and an Upload button.
+
+<P><TABLE WIDTH="100%" BORDER=1 CELLPADDING=6 CELLSPACING=0><TR><TD>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD WIDTH=40><IMG SRC="images/important.gif" WIDTH=32 HEIGHT=32 ALT=""></TD><TD VALIGN=MIDDLE><B>Important</B></TD></TR></TABLE>
+<P>FTP sends your name and password as plain text, so they can be read along the way. Use a password
+you don't use anywhere else.</TD></TR></TABLE>
+
+<H2>What Mill needs</H2>
+
+<P>Mill speaks FTP with the Internet Services Plug-In, which Easy Install puts in the Mill Plug-Ins
+folder.
+
+<P ALIGN=CENTER><A HREF="contents.html">Contents</A> | <A HREF="gopher.html">Previous</A> | <A HREF="archives.html">Next</A><BR>&nbsp;
+</TD></TR></TABLE>
+</BODY>
+</HTML>

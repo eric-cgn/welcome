@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>Finding People</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<TABLE WIDTH=460 ALIGN=CENTER BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD>
+<H1>Finding People</H1>
+
+<P>Every server on the Internet is kept by people, and many are used by people every day. Three
+protocols help you learn about them: finger, whois, and LDAP. <A HREF="http://mill.1in1e6.com/">Mill</A>
+speaks all three, with the plug-ins described at the end of this page.
+
+<H2>Finger</H2>
+
+<P><TABLE WIDTH="100%" BORDER=1 CELLPADDING=6 CELLSPACING=0><TR><TD>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD WIDTH=40><IMG SRC="images/try.gif" WIDTH=32 HEIGHT=32 ALT=""></TD><TD VALIGN=MIDDLE><B>Try this</B></TD></TR></TABLE>
+<OL>
+<LI>Type <A HREF="finger://happynetbox.com/"><TT>finger://happynetbox.com/</TT></A> and press
+Return. Mill shows a list of names: people who have written something for others to read with
+finger.
+<LI>Choose a name from the list. Type <TT>finger://happynetbox.com/</TT> followed by the name, and
+press Return.
+</OL>
+
+<!-- EDGE: Happy Net Box profiles are written by its users, so what a reader finds there can't be checked in advance -->
+<P>Mill shows what that person wrote.
+</TD></TR></TABLE>
+
+<P>Finger answers a simple question: who is this person? You send a person's name to a computer,
+and it answers with what that computer has been set up to share about them: often a real name,
+when they last connected, and a short note they wrote themselves, called a plan.
+
+<P>A plan is a little like a note pinned to an office door, except that anyone on the Internet can
+read it.
+
+<P>If you leave the name out, as in the first step above, many computers answer with a list of the
+people using them. Some computers answer finger requests. Many don't, to protect their users'
+privacy.
+
+<P>Happy Net Box, the server in the steps above, is run by Ben Brown for people who like to write a
+few lines for others to find.
+
+<!-- EDGE: a weather chart by finger is a playful use of the protocol -->
+<P>Finger isn't only for people. The server <TT>graph.no</TT> answers with a weather chart, drawn in
+letters and symbols, for the town you name. Try
+<A HREF="finger://graph.no/oslo"><TT>finger://graph.no/oslo</TT></A>, or put the name of a town
+near you in place of <TT>oslo</TT>.
+
+<!-- EDGE: names Les Earnest and Stanford as finger's origin -->
+<P>Finger was written by Les Earnest at Stanford University in 1971. Its rulebook is RFC 1288,
+published in 1991.
+
+<H2>Whois</H2>
+
+<P><TABLE WIDTH="100%" BORDER=1 CELLPADDING=6 CELLSPACING=0><TR><TD>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD WIDTH=40><IMG SRC="images/try.gif" WIDTH=32 HEIGHT=32 ALT=""></TD><TD VALIGN=MIDDLE><B>Try this</B></TD></TR></TABLE>
+<P>Type <A HREF="whois://whois.iana.org/edu"><TT>whois://whois.iana.org/edu</TT></A> and press
+Return. Mill shows who looks after the names that end in <TT>edu</TT>, and how to reach them.
+</TD></TR></TABLE>
+
+<P>Whois answers a different question: who is responsible for a name? A name such as
+<TT>1in1e6.com</TT> is registered to the person or organization that uses it, and each group of
+names, such as <TT>com</TT> or <TT>edu</TT>, is looked after by an organization of its own. Whois
+servers keep these records and answer questions about them. (You read about groups of names in
+Names and Numbers.)
+
+<P>The server <TT>whois.iana.org</TT> answers for the groups themselves. Its answer for
+<TT>edu</TT> includes a line that begins <TT>whois:</TT>, naming the whois server for that group.
+To ask about a name in the group, use that server: type <TT>whois://</TT>, the server's name, a
+slash, and the name you are asking about.
+
+<P>Whois is described in RFC 954, published in 1985.
+
+<H2>Directories</H2>
+
+<P><TABLE WIDTH="100%" BORDER=1 CELLPADDING=6 CELLSPACING=0><TR><TD>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD WIDTH=40><IMG SRC="images/try.gif" WIDTH=32 HEIGHT=32 ALT=""></TD><TD VALIGN=MIDDLE><B>Try this</B></TD></TR></TABLE>
+<OL>
+<LI>Type <A HREF="ldap://db.debian.org/"><TT>ldap://db.debian.org/</TT></A> and press Return. Mill
+lists the directories this server keeps.
+<LI>Click <TT>dc=debian,dc=org</TT>.
+</OL>
+
+<P>Mill shows the two entries inside it: one for the project's members (<TT>ou=users</TT>) and one
+for its computers (<TT>ou=hosts</TT>).
+</TD></TR></TABLE>
+
+<P>A directory is a list of people, and sometimes of things, kept on a server so that it can be
+searched. It is a little like a telephone book. Unlike a telephone book, a directory is arranged the
+way folders are on your Macintosh: each entry sits inside a larger one, and an entry's name lists
+the larger ones it sits inside, as in <TT>ou=hosts,dc=debian,dc=org</TT>.
+
+<P>LDAP, the Lightweight Directory Access Protocol, is a protocol for searching directories. Its
+rulebook is RFC 1777, published in 1995. It was designed as a lighter way to reach directories
+built to an earlier, larger standard called X.500.
+
+<P>Most directories are kept by schools and companies for their own people, and many answer only
+the computers on their own network. If yours has one, the people who run its network can tell you
+its server's name.
+
+<P>The directory in the steps above belongs to the Debian project, which makes a free operating
+system: software that does for other computers what the System does for your Macintosh. The project
+keeps a public directory of its members and its computers.
+
+<P>The first page Mill shows for a directory server also has a search form. Type the first letters
+of a person's name in the Name box, and click Search.
+
+<P>If a directory asks for a name and password, Mill asks you for them. They travel as plain text,
+so use a password you don't use anywhere else.
+
+<H2>Good manners</H2>
+
+<P>The people in these records shared them so that others could find them when there is a reason
+to. Use what you find the way you would use a telephone book.
+
+<P>Whois servers answer a great many questions, and many limit how many they will answer from one
+computer. Ask only what you need.
+
+<H2>What Mill needs</H2>
+
+<P>Finger and whois come with the Internet Services Plug-In, and directories with the LDAP Plug-In.
+Easy Install puts in both. To see the plug-ins Mill has, type <TT>mill://plugins</TT>.
+
+<P>If you would rather not type these addresses, type <TT>plugin://internet-services/about</TT> or
+<TT>plugin://ldap/about</TT>. Each has a small form that fills in the address for you.
+
+<P ALIGN=CENTER><A HREF="contents.html">Contents</A> | <A HREF="archives.html">Previous</A> | <A HREF="reference.html">Next</A><BR>&nbsp;
+</TD></TR></TABLE>
+</BODY>
+</HTML>

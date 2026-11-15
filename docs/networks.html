@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>School and Office Networks</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<TABLE WIDTH=460 ALIGN=CENTER BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD>
+<H1>School and Office Networks</H1>
+
+<P>If you connect through the network at your school or office, your Macintosh is part of two
+networks at once. One is the Internet. The other is the network of the school or office itself:
+the computers in its building, joined to each other, and through that network to the Internet.
+
+<P>Some of what's on that nearer network is meant only for the people there. The most common
+example is shared folders: a document saved in one can be opened from another computer on the same
+network. A computer that keeps shared folders for others is called a file server.
+
+<!-- EDGE: four period names in two paragraphs (Windows, IBM PC, Sun, AppleShare and the Chooser); each one does work, but it's more than the usual two -->
+<P>Computers share folders using protocols, as they do everything else on a network. IBM PCs
+running Windows share them with a protocol called SMB. Unix workstations, such as those from Sun,
+usually share them with one called NFS. <A HREF="http://mill.1in1e6.com/">Mill</A> speaks both, so
+your Macintosh can open folders on either kind of file server.
+
+<P>Your Macintosh has its own way of sharing folders, called AppleShare, which you reach through the
+Chooser. Mill doesn't speak AppleShare; for that, use the Chooser as usual.
+
+<P><TABLE WIDTH="100%" BORDER=1 CELLPADDING=6 CELLSPACING=0><TR><TD>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD WIDTH=40><IMG SRC="images/try.gif" WIDTH=32 HEIGHT=32 ALT=""></TD><TD VALIGN=MIDDLE><B>Try this</B></TD></TR></TABLE>
+<P>Ask the people who run your network for the name of a file server that uses SMB. Then type
+<TT>smb://server/</TT>, putting the file server's name in place of <TT>server</TT>.
+
+<P>Mill shows a page listing the server's shared folders. Click one to see what's in it.
+</TD></TR></TABLE>
+
+<H2>SMB</H2>
+
+<P>SMB stands for Server Message Block. In an SMB address, the server's name comes first, then the
+name of a shared folder, then any folders inside it:
+
+<P><TT>smb://server/shared-folder/folder/document</TT>
+
+<P>The server's name alone, <TT>smb://server/</TT>, lists its shared folders. Mill shows each folder
+as a page, with a link for each document and folder in it. Click a document to open it or save it,
+as you would a file from the Web.
+
+<P>Mill first asks the server to let you in as a guest. If the server wants to know who you are,
+Mill asks you for a name and password. On some networks you write the name in two parts, with a
+backslash between them, such as <TT>OFFICE\yourname</TT>. The people who run the network can tell
+you what to write.
+
+<P>Use a password you don't use anywhere else. SMB doesn't use encryption, and some servers ask Mill
+to send the password itself, so it could be read along the way.
+
+<P>SMB began at IBM in the 1980s, and Microsoft built it into Windows. Its rules were published by
+X/Open, a group of computer companies, rather than as an RFC.
+
+<H2>NFS</H2>
+
+<P>NFS stands for Network File System. In an NFS address, the server's name comes first, then the
+name of a folder the server shares, then any folders inside it:
+
+<P><TT>nfs://server/shared-folder/folder/document</TT>
+
+<P>The server's name alone, <TT>nfs://server/</TT>, lists the folders it shares. As with SMB, each
+folder appears as a page of links.
+
+<P>NFS servers don't ask for a password. They decide what you may open from two numbers Mill sends
+with each request, a User ID and a Group ID, and they take Mill's word for them. That is one reason
+an NFS server usually shares its folders only with computers it knows. Ask the people who run the
+server which numbers to use, and enter them in Mill's Settings.
+
+<P><TABLE WIDTH="100%" BORDER=1 CELLPADDING=6 CELLSPACING=0><TR><TD>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD WIDTH=40><IMG SRC="images/note.gif" WIDTH=32 HEIGHT=32 ALT=""></TD><TD VALIGN=MIDDLE><B>Note</B></TD></TR></TABLE>
+<P>For Mill to connect, an NFS server must accept requests that come from ports numbered above 1023.
+The people who run the server will know what this means.
+</TD></TR></TABLE>
+
+<P>NFS was created at Sun Microsystems. Its rulebook was published as RFC 1094 in 1989, and version
+3, the one Mill speaks, as RFC 1813 in 1995.
+
+<H2>Good manners</H2>
+
+<P>A file server belongs to the school or office that runs it, and the people who run it decide who
+may open what. Open only what you're meant to. If a server asks for a name and password you don't
+have, ask them rather than guessing.
+
+<H2>What Mill needs</H2>
+
+<P>Mill can open folders and documents on these file servers, but it can't save anything to them.
+
+<P>SMB comes from the SMB Plug-In, and NFS from the NFS Plug-In. Easy Install puts both in the Mill
+Plug-Ins folder. To change their settings, choose Preferences from the Edit menu; Mill opens its
+Settings page, and SMB and NFS each have a section under Protocols. There you can turn either one on
+or off, and, for NFS, enter the User ID and Group ID.
+
+<P>Some servers are set up not to accept Mill. If Mill can't connect, ask the people who run the
+network.
+
+<P ALIGN=CENTER><A HREF="contents.html">Contents</A> | <A HREF="mail.html">Previous</A> | <A HREF="mac.html">Next</A><BR>&nbsp;
+</TD></TR></TABLE>
+</BODY>
+</HTML>

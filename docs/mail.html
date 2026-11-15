@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>Electronic Mail</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<TABLE WIDTH=460 ALIGN=CENTER BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD>
+<H1>Electronic Mail</H1>
+
+<P><TABLE WIDTH="100%" BORDER=1 CELLPADDING=6 CELLSPACING=0><TR><TD>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD WIDTH=40><IMG SRC="images/try.gif" WIDTH=32 HEIGHT=32 ALT=""></TD><TD VALIGN=MIDDLE><B>Try this</B></TD></TR></TABLE>
+<P>If your Internet provider gives you an IMAP mail account, type
+<TT>imap://<I>name</I>@<I>server</I>/</TT>, using your account's name and the name of your
+provider's mail server, and press Return. If your account's name is your e-mail address, type the
+whole e-mail address as the name.
+
+<P><A HREF="http://mill.1in1e6.com/">Mill</A> asks for your password, then lists your mailboxes.
+Click INBOX to see the messages in it, newest first. Messages you haven't read are in bold.
+</TD></TR></TABLE>
+
+<H2>What electronic mail is</H2>
+
+<P>Electronic mail, or e-mail, is a message sent from one person to another over the Internet. Your
+messages wait in a mailbox on your provider's mail server until you read them, much as letters wait
+in a post office box until you come for them.
+
+<P>The comparison stops when you read your mail. With IMAP, reading a message doesn't take it out of
+the box: it stays on the server, so you can read it again later, even from another computer.
+
+<P>An e-mail address names a person's mailbox and the server that keeps it, joined by the @ sign,
+said "at." It isn't the kind of address you type into Mill's address bar: it says where a message
+should go, not which protocol to use.
+
+<H2>A little history</H2>
+
+<P>E-mail is older than the Internet. In 1971, Ray Tomlinson sent messages between two computers on
+the ARPANET, the network the Internet grew from, and chose the @ sign to join a person's name to the
+name of their computer.
+
+<P>IMAP, the Internet Message Access Protocol, lets a program read mail that stays on the server.
+Its rulebook is RFC 2060, published in 1996.
+
+<H2>What Mill does</H2>
+
+<P>While specialized programs exist to manage electronic mail, Mill can read yours. It lists your
+mailboxes, shows each mailbox's messages a page at a time with the ones you haven't read in bold,
+and shows each message's text. Pictures and other files attached to a message are named, not shown.
+Mill can also search a mailbox; <TT>plugin://imap/about</TT> shows the addresses it takes.
+
+<P>Mill only reads. It doesn't send mail, and it doesn't move or delete messages. Reading a message
+in Mill doesn't even mark it as read, so it stays unread for the program you use to answer your
+mail.
+
+<!-- EDGE: "already require encryption" states the trend, as in the style guide's proxy example -->
+<P>Mill logs in to the mail server without encryption. Some mail servers already require
+encryption; ask your provider whether its server accepts an IMAP login without it.
+
+<P><TABLE WIDTH="100%" BORDER=1 CELLPADDING=6 CELLSPACING=0><TR><TD>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD WIDTH=40><IMG SRC="images/important.gif" WIDTH=32 HEIGHT=32 ALT=""></TD><TD VALIGN=MIDDLE><B>Important</B></TD></TR></TABLE>
+<P>Mill sends your name and password to the mail server as plain text, so they could be read along
+the way. Use a
+password you don't use anywhere else. When you finish, you can choose Clear Logins and Cookies from
+the Edit menu, and Mill forgets every name and password you have typed.
+</TD></TR></TABLE>
+
+<H2>Good manners</H2>
+
+<P>A message can be passed along to anyone in moments. Write each one as if people other than the
+one you sent it to might read it.
+
+<H2>What Mill needs</H2>
+
+<P>Mill reads mail with its IMAP Plug-In. To see whether it is installed, type
+<TT>mill://plugins</TT> and look for IMAP.
+
+<P>If you read mail from one server, you can save its name:
+
+<OL>
+<LI>Choose Preferences from the Edit menu. Mill opens its Settings page.
+<LI>Under Protocols, find IMAP, and type the server's name in Default server.
+<LI>Click Save, at the bottom of the page.
+</OL>
+
+<P>Then <TT>plugin://imap/about</TT> has a form with the server filled in: type your account's name
+and click Open. Under IMAP, Messages per page sets how many messages each page lists.
+
+<P ALIGN=CENTER><A HREF="contents.html">Contents</A> | <A HREF="news.html">Previous</A> | <A HREF="networks.html">Next</A><BR>&nbsp;
+</TD></TR></TABLE>
+</BODY>
+</HTML>

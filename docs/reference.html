@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>Reference</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<TABLE WIDTH=460 ALIGN=CENTER BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD>
+<H1>Reference</H1>
+
+<P>Some servers answer one kind of question, and answer it well. This page introduces two:
+dictionary servers, which define words, and time servers, which tell your Macintosh the time.
+<A HREF="http://mill.1in1e6.com/">Mill</A> speaks the protocols for both, with the plug-in described
+at the end of this page.
+
+<H2>Dictionaries</H2>
+
+<P><TABLE WIDTH="100%" BORDER=1 CELLPADDING=6 CELLSPACING=0><TR><TD>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD WIDTH=40><IMG SRC="images/try.gif" WIDTH=32 HEIGHT=32 ALT=""></TD><TD VALIGN=MIDDLE><B>Try this</B></TD></TR></TABLE>
+<!-- EDGE: "modem" chosen as a word this reader has just met -->
+<P>Type <A HREF="dict://dict.org/d:modem"><TT>dict://dict.org/d:modem</TT></A> and press Return.
+Mill shows the definitions of <I>modem</I> from each of the server's dictionaries that has the
+word, with a box at the top for looking up another.
+</TD></TR></TABLE>
+
+<P>A dictionary server keeps dictionaries and answers questions about the words in them. The
+protocol it speaks is called DICT. Its rulebook is RFC 2229, published in October 1997.
+
+<P>In the address, <TT>d:</TT> means define, and the word comes after it. Two other forms are
+useful:
+
+<UL>
+<LI><TT>m:</TT> in place of <TT>d:</TT> lists the words in the dictionaries that match the one you
+typed. It helps when you aren't sure of the spelling: <TT>dict://dict.org/m:modm</TT> finds
+<I>modem</I>.
+<LI>Leave out <TT>d:</TT> and the word, as in <TT>dict://dict.org/</TT>, to see the list of
+dictionaries the server keeps.
+</UL>
+
+<!-- EDGE: the Jargon File is a nod for readers who know it -->
+<P>The server <TT>dict.org</TT> keeps more than two hundred dictionaries: general English
+dictionaries, a thesaurus, dictionaries of computing terms such as the Jargon File, and
+dictionaries for translating between languages.
+
+<H2>Time</H2>
+
+<P><TABLE WIDTH="100%" BORDER=1 CELLPADDING=6 CELLSPACING=0><TR><TD>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD WIDTH=40><IMG SRC="images/try.gif" WIDTH=32 HEIGHT=32 ALT=""></TD><TD VALIGN=MIDDLE><B>Try this</B></TD></TR></TABLE>
+<P>Type <A HREF="time://time.nist.gov/"><TT>time://time.nist.gov/</TT></A> and press Return.
+Mill shows the server's time beside your Macintosh's, and how far apart they are. A button, Set
+this Mac's clock, sets your Macintosh's clock to match.
+</TD></TR></TABLE>
+
+<P>A time server answers one question: what time is it? Many time servers are kept by national
+standards laboratories, whose work includes keeping their country's official time. The server
+<TT>time.nist.gov</TT> belongs to the National Institute of Standards and Technology, in the United
+States.
+
+<P>Two protocols ask for the time, and both were published in 1983:
+
+<UL>
+<LI>The Time protocol (RFC 868) answers with a number: the seconds since the start of 1900. Mill
+compares it with your Macintosh's clock.
+<LI>The Daytime protocol (RFC 867) answers with the date and time written out for people to read.
+</UL>
+
+<P>Mill asks for the Time protocol first. If a server offers only Daytime, Mill shows its answer
+instead.
+
+<P>The Time protocol counts the seconds in Coordinated Universal Time, the time kept by
+laboratories around the world, so Mill uses the Map control panel to turn it into your local time.
+If you haven't set the Map control panel to a city in your time zone, set it before you set the
+clock.
+
+<P>The Time protocol counts whole seconds, so after setting, your clock will be right to within a
+second or two.
+
+<H2>Good manners</H2>
+
+<P>Time servers answer a great many computers. Checking your Macintosh's clock once a day, or less
+often, is plenty.
+
+<H2>What Mill needs</H2>
+
+<P>Dictionaries and time come with the Internet Services Plug-In, which Easy Install puts in. In
+Mill's Settings, each has a Default server: <TT>dict.org</TT> and <TT>time.nist.gov</TT>, unless
+you change them.
+
+<P>If you would rather not type these addresses, type <TT>plugin://internet-services/about</TT>
+for a small form that fills in the address for you.
+
+<P ALIGN=CENTER><A HREF="contents.html">Contents</A> | <A HREF="people.html">Previous</A> | <A HREF="news.html">Next</A><BR>&nbsp;
+</TD></TR></TABLE>
+</BODY>
+</HTML>
