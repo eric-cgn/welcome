@@ -6,6 +6,10 @@ left. Settled items move to the bottom with what was decided.
 
 ## Edges in the pages
 
+Published 2026-11-15 as written, after Eric read every page; the comments are out of the pages, and
+these stay listed for the checks still owed (the 2.1 items against the built `v2.1`, edge 12's
+source, edge 14 when Mill's Gopher change lands).
+
 | # | Page | Edge |
 |---|---|---|
 | 1 | archives.html | The formats Mill handles. The 2.1 plan (retro repo, `docs/mill-plan.md`, 4905f9b on `globaltalk`) puts gzip, MacBinary, BinHex, zip, and tar in an Archive Formats Plug-In, with Browse. StuffIt and Compact Pro stay out. Redrafted from the plan; the "Opening a wrapped file" and "When Browse is dimmed" sections and the Try this need checking against the built `v2.1` after its wording review. Open: what saving a file from inside a MacBinary or BinHex file gives (the page says "the file inside, unwrapped"). |
