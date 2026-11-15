@@ -254,25 +254,26 @@ you don't use anywhere else. Don't alarm the reader.
 
 Group the protocols by the kind of place they lead to:
 
-| Page | Protocols |
-|---|---|
-| Welcome | (the letter), `index.html` |
-| Contents | the list of pages, `contents.html` |
-| Rules of the Road | the information superhighway; protocols; requests, servers, packets, and routers |
-| Addresses | how to read `scheme://host:port/path`; names and numbers (DNS) in one paragraph |
-| The World Wide Web | `http:`; encryption and proxies |
-| Gopher | `gopher:` |
-| Files | `ftp:` |
-| Finding people | `finger:`, `whois:`, `ldap:` |
-| Reference | `dict:`, `time:` |
-| Newsgroups | `news:`, `nntp:` |
-| Electronic mail | `imap:` |
-| School and office networks | `smb:`, `nfs:` |
-| Your Macintosh | `file:`, `mill:` |
-| Searching | search engines, starting with FrogFind |
-| Etiquette | being a good guest; plain text and passwords |
-| Where to Go | the directory of places to visit |
-| Glossary | every term defined in the guide |
+| Page | File | Covers |
+|---|---|---|
+| Welcome | `index.html` | the letter |
+| Contents | `contents.html` | the list of pages |
+| Rules of the Road | `road.html` | the information superhighway; protocols; requests, servers, packets, and routers |
+| Addresses | `addresses.html` | reading an address: protocol, server, what you're asking for |
+| Names and Numbers | `names.html` | numbers and names (DNS); ports, the usual ports, and addresses that name one |
+| The World Wide Web | `web.html` | `http:`; encryption and proxies |
+| Gopher | `gopher.html` | `gopher:` |
+| Files | `files.html` | `ftp:` |
+| Finding People | `people.html` | `finger:`, `whois:`, `ldap:` |
+| Reference | `reference.html` | `dict:`, `time:` |
+| Newsgroups | `news.html` | `news:`, `nntp:` |
+| Electronic Mail | `mail.html` | `imap:` |
+| School and Office Networks | `networks.html` | `smb:`, `nfs:` |
+| Your Macintosh | `mac.html` | `file:`, `mill:` |
+| Searching | `search.html` | search engines, starting with FrogFind |
+| Etiquette | `etiquette.html` | being a good guest; plain text and passwords |
+| Where to Go | `places.html` | the directory of places to visit |
+| Glossary | `glossary.html` | every term defined in the guide |
 
 Every protocol page follows the same order:
 
