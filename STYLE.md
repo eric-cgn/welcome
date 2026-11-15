@@ -267,8 +267,14 @@ Mark every humor call and every borderline true-then-true-now call in the source
 `<!-- EDGE: why -->`. Eric reviews each one before publishing. Running `grep -rn EDGE docs/` lists
 them all.
 
+Published pages contain no comments at all: Mill's View Source would show them. Each EDGE is settled
+(kept or rewritten) and then removed before the page is pushed. `tools/check.sh` refuses any page
+with a comment in it.
+
 ## Testing
 
+- **Before every push:** `tools/check.sh`, which checks the DTD, ASCII, comments, size, and image
+  attributes.
 - **In Mill:** view every page in Mill at Macintosh Plus resolution before publishing.
 - **Links:** check every link in the guide by speaking its protocol. curl handles http, ftp, gopher,
   dict, ldap, imap, and smb, and nc handles finger and time.
