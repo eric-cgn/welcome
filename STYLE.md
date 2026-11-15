@@ -154,6 +154,21 @@ change log.
 An occasional clever remark or inside joke is welcome if it fits; don't resist one that does. Never
 make one the point of a passage. Mark anything near the line for review.
 
+### Nostalgia
+
+Take the chance for nostalgia when it comes, without overdoing it or leaving the period voice. The
+nostalgia happens in the reader, never in the text: name the period's machines, programs, and places
+as everyday facts of the present, and let an old-timer recognize them. Never reminisce ("remember
+when...").
+
+- **The detail must earn its place.** It should prove a point or give the reader something real, as
+  in "Whether you use a Macintosh, an IBM PC, or a Sun workstation, you are welcome on the Internet,"
+  where the machines show that protocols don't care what computer you use.
+- **A few details at a time.** Three names make the point. Ten make a museum.
+- **Name things the way the period did:** "a Sun workstation," "an IBM PC," "a Compact Macintosh."
+- **Mark it EDGE** when a page has more than one or two such details, or when one is there mainly for
+  the pleasure of it.
+
 ### Safety
 
 Say once, calmly, on the Etiquette page, and in a sentence wherever a password comes up: these
