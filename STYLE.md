@@ -94,6 +94,12 @@ The reference opening:
 Model the voice on the best plain guides of the period, which explained patiently and generously and
 never hyped. Think of a well-read friend at the next desk in a university computer lab.
 
+- **Precise.** Every sentence is literally true, including its comparisons and contrasts. Never trade
+  accuracy for rhythm. A contrast must not deny something true: "useful not because it is fast" is
+  wrong when speed is part of the reason; write "useful not only because it is fast, but also
+  because...". Absolutes (*any, every, never, all*) must hold exactly, or be narrowed until they do.
+  Technical details inside a comparison must be right too: MacTCP puts packets in order, not Mill.
+- **Fun to read.** Precision and plainness are no excuse for dullness.
 - **Plain words, short sentences, active voice.** Address the reader as "you."
 - **Warm but precise.** Delight is welcome; hype is not. No exclamation marks, no superlatives, no
   "amazing" or "awesome".
@@ -117,6 +123,25 @@ The Internet is not a site. It is a set of published rules, called protocols, th
 learn. This is why a Compact Macintosh can talk to any computer on the Internet, and why anyone can
 run a server as well as visit one. Every page should leave the reader understanding this a little
 better.
+
+### Analogies: use them, don't torture them
+
+An analogy is a way in, not a place to stay. Use it while it helps, and drop it once the reader has
+the idea. After a concept has been explained, call it by its real name: request, server, packet,
+protocol.
+
+- **The guide's one extended analogy is the information superhighway,** on the Rules of the Road
+  page. We take it somewhere new: a highway is useful not only because it is fast, but also because
+  everyone follows the same rules of the road, which is what protocols are. Couriers carry the
+  reader's request (the note) to the store (the server), and the reply comes back in parcels
+  (packets). The page ends by naming the real terms, and the analogy is not carried further.
+- **Don't extend it to everything.** Proxies, encryption, and name lookup (DNS) are explained plainly
+  or with their own short comparison on their own pages, never as more highway or courier detail.
+  When an extension would need explaining itself, leave it out.
+- **Each protocol page uses the comparison that fits best,** such as a card catalog for Gopher or a
+  bulletin board for newsgroups, and only one.
+- **The highway stays out of the Welcome letter,** apart from at most one line.
+- **Section names may mention the highway sparingly** ("Rules of the Road"). Mark each one EDGE.
 
 ### Mill, honestly
 
@@ -152,6 +177,7 @@ Group the protocols by the kind of place they lead to:
 | Page | Protocols |
 |---|---|
 | Welcome | (the letter) |
+| Rules of the Road | the information superhighway; protocols; requests, servers, and packets |
 | Addresses | how to read `scheme://host:port/path`; names and numbers (DNS) in one paragraph |
 | The Web | `http:`; encryption and proxies |
 | Gopher | `gopher:` |
