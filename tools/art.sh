@@ -14,3 +14,21 @@ python3 -I tools/letter.py "$tmp/road.gif" "$tmp/road-lettered.gif" art/fonts/ti
 magick "$tmp/road-lettered.gif" +antialias -fill black -stroke black -strokewidth 3 -draw "line 351,62 361,52" \
   -strokewidth 1 -draw "polygon 369,44 355,46 367,58" -type bilevel -colors 2 GIF:docs/images/road.gif
 magick identify -format '%f: %wx%h, %b\n' docs/images/road.gif
+
+# Callout icons, 32x32, from the sheet art/icons.jpg: each is cropped inside its grid cell (no grid
+# lines), trimmed to its ink, centered in a square with a 1-pixel margin at the final size, shrunk
+# with a box filter, and thresholded at 65% (no dithering, black on white).
+icon() {   # icon NAME CROP
+    magick art/icons.jpg -crop "$2" +repage -colorspace Gray -level 20%,85% -fuzz 10% -trim +repage "$tmp/$1.png"
+    m=$(magick identify -format '%[fx:floor(max(w,h)*32/30)]' "$tmp/$1.png")
+    magick "$tmp/$1.png" -background white -gravity center -extent "${m}x${m}" -filter Box -resize 32x32 \
+      -threshold 65% -type bilevel -colors 2 "GIF:docs/images/$1.gif"
+}
+icon try 405x473+8+8          # a finger pressing a key: Try this
+icon tip 615x473+640+8        # a light bulb: Tip
+icon note 300x346+8+496       # paper and pencil: Note
+icon important 304x346+320+496  # a triangle with an exclamation mark: Important
+icon book 304x346+638+496     # an open book: Glossary
+icon where 304x346+956+496    # a signpost: Where to Go
+magick identify -format '%f: %wx%h, %b\n' docs/images/try.gif docs/images/tip.gif docs/images/note.gif \
+  docs/images/important.gif docs/images/book.gif docs/images/where.gif

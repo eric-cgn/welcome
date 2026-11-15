@@ -329,6 +329,21 @@ read well in any other browser.
   - Nothing wider than about 460 pixels.
 - **Every address is shown in `<TT>`** as well as linked, so the reader can read it and type it.
   Reading an address is a skill the guide teaches.
+- **Callouts:** Try this, Tip, Note, and Important are set apart the same way every time: a thin
+  rule above and below, the 32 x 32 icon on the left, and the bold label starting the text.
+
+  ```html
+  <HR SIZE=1 NOSHADE>
+  <TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0><TR>
+  <TD VALIGN=TOP WIDTH=44><IMG SRC="images/tip.gif" WIDTH=32 HEIGHT=32 ALT=""></TD>
+  <TD VALIGN=TOP><B>Tip</B> ...</TD></TR></TABLE>
+  <HR SIZE=1 NOSHADE>
+  ```
+
+  The icons are `try.gif` (Try this), `tip.gif` (Tip), `note.gif` (Note), and `important.gif`
+  (Important, kept for safety: passwords and plain text). `book.gif` marks the Glossary and
+  `where.gif` Where to Go. The icon's ALT is empty because the bold label right beside it says the
+  same thing.
 - **Navigation:** the same Contents | Previous | Next line at the top and bottom of every page,
   following the reading order: Welcome, Contents, then the pages in the order of the outline. The
   list of pages is on the Contents page only; no other page repeats it. The current page's own
