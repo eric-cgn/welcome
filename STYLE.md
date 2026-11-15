@@ -350,6 +350,10 @@ read well in any other browser.
   following the reading order: Welcome, Contents, then the pages in the order of the outline. The
   list of pages is on the Contents page only; no other page repeats it. The current page's own
   entry in the line is plain text, not a link.
+- **A blank line after the navigation** (`<BR>&nbsp;` at the end of the line), so that when the page
+  is scrolled to the bottom, the links sit one line above Mill's status bar instead of under it. A
+  `<BR>` alone at the end of a paragraph adds no height in many browsers; the `&nbsp;` gives the line
+  something to hold.
 - **File names:** short and lowercase (`gopher.html`), so they are easy to type.
 
 ## Marking judgment calls
