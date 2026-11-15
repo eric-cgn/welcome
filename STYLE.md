@@ -282,7 +282,9 @@ Every protocol page follows the same order:
 1. **What it is:** a sentence of metaphor, then a sentence on how it works.
 2. **A little history:** two or three sentences, naming the rulebook.
 3. **What's there:** real places, described in our voice.
-4. **Good manners.**
+4. **Good manners,** only when the protocol has real customs of its own that the reader needs (a
+   newsgroup's FAQ, an archive's mirrors). With nothing real to say, leave the section out: general
+   advice about behaving well reads as condescending.
 5. **What Mill needs:** for example, the plug-in that provides it.
 6. **Try this:** last, once the protocol has been explained and anything it needs has been set up.
    On a page that covers several protocols, each protocol's section ends with its own Try this.
