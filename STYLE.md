@@ -264,9 +264,11 @@ read well in any other browser.
     the GIF from them.
   - Drawings, not photographs: bold lines and solid blacks, little fine hatching, which breaks up
     when shrunk.
-  - Illustrations are single-panel cartoons in the style of a newspaper editorial cartoon: pen and
-    ink, labels on the things that matter. Labels are lettered in afterward, in a bitmap typeface,
-    so they stay crisp at 1 bit.
+  - Illustrations are single-panel cartoons in the style of a newspaper editorial cartoon, pen and
+    ink. Let the drawing speak for itself: label only what can't be recognized without one.
+    Lettering is added afterward in a bitmap typeface (Times Bold 14 reads cleanly; the 12's "8"
+    looks like an "S"), so it stays crisp at 1 bit. Generated originals are asked for with no text.
+  - A short italic caption under a cartoon carries its punchline.
   - Always give `WIDTH`, `HEIGHT`, and `ALT`.
   - Nothing wider than about 460 pixels.
 - **Every address is shown in `<TT>`** as well as linked, so the reader can read it and type it.
