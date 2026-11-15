@@ -42,8 +42,6 @@ left. Settled items move to the bottom with what was decided.
   found to point to yet.
 - **Addresses page:** Command-L (Open Location) as step 1; a Tip that Mill adds `http://` itself.
 - **Default bookmarks for Mill 2.1:** eleven proposed, in `BOOKMARKS.md`; handed to the Mill session by Eric.
-  textfiles.com, 68k.news, Gopher at quux.org and Floodgap, the Info-Mac mirror at ftp.jussieu.fr,
-  dict.org, finger weather for Oslo, time.nist.gov). Hand to the Mill session, or Eric passes it on.
 - **Glossary:** written last, from the terms the pages define.
 - **Outside the guide:** `http://1in1e6.com/` says "classic Macs" (out of voice); Mill's https alert
   says "TLS".
