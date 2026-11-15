@@ -20,13 +20,41 @@ on any computer to browse and enjoy the guide.
 - **The Welcome letter invites everyone else once,** plainly, and nowhere else needs to.
 - **Mill is freeware.** Readers use or choose Mill; they never buy or purchase it.
 
-The readers:
+## The reader
 
-- Someone using Mill on a Macintosh Plus or later, who may know computers well but not the Internet.
-- Someone who has used the Internet only through a few large sites and has never typed an address
-  that didn't start with `http`. This reader may know nothing about protocols, servers, or addresses.
-  Write for this reader first.
-- Someone who knew the Internet well and is coming back. Never talk down to them.
+### Primary reader, in 1997
+
+Write for this person first.
+
+- **Their computer:** a Compact Macintosh bought new around 1990 to 1992 as a sensible, affordable
+  first computer. Most likely a Macintosh Classic: 9-inch black-and-white screen, a few megabytes of
+  memory, a small hard disk, System 6 or 7. Possibly a hand-me-down Plus or SE. This is the machine
+  Mill is built for.
+- **What they use it for:** letters, school reports, household accounts, perhaps a club newsletter.
+- **What they're comfortable with:** the Finder, the mouse, menus, windows, folders, documents,
+  saving, floppy disks. They learned from Apple's manuals and the tour that came with the computer.
+- **What they've heard:** "the Internet," "the information superhighway," and Web addresses in
+  advertisements. They have never used it, or have only watched someone else.
+- **How they connect:** they're newly connected, by modem through a local Internet provider or
+  through the network at school or work. They chose Mill because it runs on the computer they already
+  own.
+- **Temperament:** intelligent and careful, a little wary of breaking something, and unwilling to
+  feel foolish. They'd rather read slowly than guess.
+- **What they don't know yet:** what a link is, that underlined words can be clicked, or what a
+  server, protocol, or address is. They don't know there are places on the Internet besides the Web.
+
+Explaining the basics to this reader is respectful, not insulting, as long as it is done plainly
+and without apology, the way Apple's manuals explained clicking and dragging.
+
+### Secondary reader, today
+
+Someone exploring the Internet from a Compact Macintosh who knows modern computers but has never
+looked underneath them, at protocols, servers, and addresses. Writing for the primary reader serves
+this reader too. Never write for them at the primary reader's expense.
+
+Readers who knew the Internet well and are coming back also read the guide. They enjoy the period
+details (see *Nostalgia*). Never talk down to them, and never write for them at the primary reader's
+expense either.
 
 ## The rule: true then, true now
 
