@@ -10,6 +10,16 @@ Internet is, protocol by protocol, using the ones Mill speaks, and gives the rea
 visit. It is a welcome for Mill users and a starting point for anyone exploring the Internet from a
 Compact Apple Macintosh.
 
+The guide and the Welcome letter are written for people who use Mill, to teach them what they have
+and help them make full use of it. We think other readers will benefit too, and we invite readers
+on any computer to browse and enjoy the guide.
+
+- **"You" is a Mill user on a Macintosh.** Instructions are written for Mill, and sentences such as
+  "Your Macintosh puts the parcels back in order" are exactly true for that reader. Don't hedge each
+  sentence for other readers.
+- **The Welcome letter invites everyone else once,** plainly, and nowhere else needs to.
+- **Mill is freeware.** Readers use or choose Mill; they never buy or purchase it.
+
 The readers:
 
 - Someone using Mill on a Macintosh Plus or later, who may know computers well but not the Internet.
