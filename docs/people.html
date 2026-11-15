@@ -102,12 +102,15 @@ so use a password you don't use anywhere else.
 <TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD WIDTH=40><IMG SRC="images/try.gif" WIDTH=32 HEIGHT=32 ALT=""></TD><TD VALIGN=MIDDLE><B>Try this</B></TD></TR></TABLE>
 <OL>
 <LI>Type <A HREF="ldap://db.debian.org/"><TT>ldap://db.debian.org/</TT></A> and press Return. Mill
-lists the directories this server keeps.
-<LI>Click <TT>dc=debian,dc=org</TT>.
+lists the directories this server keeps, with a search form below them.
+<LI>Click <TT>dc=debian,dc=org</TT>. Mill shows the two entries inside it: one for the project's
+members (<TT>ou=users</TT>) and one for its computers (<TT>ou=hosts</TT>).
+<LI>Choose Back from the Go menu.
+<LI>The project has many members, so search for a common name: type <TT>John</TT> in the Name box,
+and click Search.
 </OL>
 
-<P>Mill shows the two entries inside it: one for the project's members (<TT>ou=users</TT>) and one
-for its computers (<TT>ou=hosts</TT>).
+<P>Mill lists the members whose full name or last name begins with "John," such as Johnson.
 </TD></TR></TABLE>
 
 <H2>Good manners</H2>
