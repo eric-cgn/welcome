@@ -250,6 +250,10 @@ read well in any other browser.
   or rewrite the sentence.
 - **The first screen of every page is useful on its own.** About 18 lines of 12-point text fit in
   Mill's page area; measure against the real window before settling the numbers.
+- **A fixed column.** Each page's content sits in one centered table cell, 460 pixels wide
+  (`<TABLE WIDTH=460 ALIGN=CENTER BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD>`), so lines stay
+  a readable length on wide screens and fill Mill's window on a Plus. Check the width against
+  Mill's page area.
 - **One idea per screen.** Paragraphs of four lines or fewer on a Plus screen.
 - **Under about 16 KB of HTML per page.**
 - **Images:**
